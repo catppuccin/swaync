@@ -42,7 +42,7 @@
 
 ## 💝 Thanks to
 
-- [Isabel](https://github.com/isabelroses)
+- [Isabel Roses](https://github.com/isabelroses)
 
 &nbsp;
 
