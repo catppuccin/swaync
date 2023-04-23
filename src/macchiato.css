@@ -53,7 +53,7 @@
 
 .floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
   box-shadow: inset 0 0 0 1px #494d64;
-  background-color: #8087a2;
+  background-color: #363a4f;
   color: #cad3f5;
 }
 
@@ -105,8 +105,8 @@
 
 .control-center .widget-title button:hover {
   box-shadow: inset 0 0 0 1px #494d64;
-  background-color: #8087a2;
-  color: #24273a;
+  background-color: #5b6078;
+  color: #cad3f5;
 }
 
 .control-center .widget-title button:active {
@@ -162,7 +162,7 @@
 
 .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
   box-shadow: inset 0 0 0 1px #494d64;
-  background-color: #8087a2;
+  background-color: #363a4f;
   color: #cad3f5;
 }
 
@@ -193,11 +193,11 @@
 .control-center .notification-row .notification-background:hover {
   box-shadow: inset 0 0 0 1px #494d64;
   background-color: #8087a2;
-  color: #24273a;
+  color: #cad3f5;
 }
 
 .control-center .notification-row .notification-background:active {
   box-shadow: inset 0 0 0 1px #494d64;
   background-color: #7dc4e4;
-  color: #24273a;
+  color: #cad3f5;
 }
