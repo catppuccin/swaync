@@ -39,6 +39,8 @@
 1. Clone this repository locally
 2. Copy the theme you want from the `src` and put it into `~/.config/swaync/`
 3. Rename the chosen theme to `style.css`
+4. For those of you using custom fonts you will need to change the line `font-family: 'Ubuntu Nerd Font'` to your font of choice
+5. run `swaync -rc` to reload swaync css
 
 ## 💝 Thanks to
 
