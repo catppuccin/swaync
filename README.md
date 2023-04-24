@@ -36,12 +36,10 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Run `npm ci && npm run build`
-3. Copy the theme you want from the `src` and put it into `~/.config/swaync/`
-4. Rename the chosen theme to `style.css`
-5. For those of you using custom fonts you will need to change the line `font-family: 'Ubuntu Nerd Font'` to your font of choice
-6. run `swaync -rc` to reload swaync css
+1. Download your preferred flavor from the [latest release](https://github.com/catppuccin/swaync/releases/latest).
+2. Rename the downloaded theme to `style.css` and put it into `~/.config/swaync/`.
+3. If you're using a custom font, you will need to change the line `font-family: 'Ubuntu Nerd Font'` to your font of choice.
+4. Run `swaync -rc` to reload swaync css.
 
 ## 💝 Thanks to
 
