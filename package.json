@@ -1,13 +1,13 @@
 {
   "name": "swaync",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "soothing pastel theme for swaync",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/catppuccin/swaync.git"
   },
   "scripts": {
-    "build": "sass -I node_modules --no-charset --no-source-map src/palette:src/bin/"
+    "build": "sass -I node_modules --no-charset --no-source-map src:dist"
   },
   "author": "Catppuccin Org <releases@catppuccin.com>",
   "license": "MIT",
