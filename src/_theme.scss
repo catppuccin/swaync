@@ -306,3 +306,27 @@
   background-color: $sapphire;
   color: $text;
 }
+
+progressbar, progress, trough {
+  border-radius: 12.6px;
+}
+
+progressbar {
+  box-shadow: inset 0 0 0 1px $surface1;
+}
+
+.notification.critical progress {
+  background-color: $red;
+}
+
+.notification.low progress, .notification.normal progress {
+  background-color: $blue;
+}
+
+trough {
+  background-color: $surface0;
+}
+
+.control-center trough {
+  background-color: $surface1;
+}
