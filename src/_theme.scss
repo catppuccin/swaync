@@ -14,72 +14,36 @@
   padding: 0;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification {
+.floating-notifications.background .notification-row .notification-background .notification {
   padding: 7px;
   border-radius: 12.6px;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification.critical {
+.floating-notifications.background .notification-row .notification-background .notification.critical {
   box-shadow: inset 0 0 7px 0 $red;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content {
+.floating-notifications.background .notification-row .notification-background .notification .notification-content {
   margin: 7px;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content
-  .summary {
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .summary {
   color: $text;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content
-  .time {
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .time {
   color: $subtext0;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content
-  .body {
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .body {
   color: $text;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > * {
+.floating-notifications.background .notification-row .notification-background .notification>*:last-child>* {
   min-height: 3.4em;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action {
+.floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action {
   border-radius: 7px;
   color: $text;
   background-color: $surface0;
@@ -87,34 +51,19 @@
   margin: 7px;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action:hover {
+.floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
   box-shadow: inset 0 0 0 1px $surface1;
   background-color: $surface0;
   color: $text;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action:active {
+.floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action:active {
   box-shadow: inset 0 0 0 1px $surface1;
   background-color: $sapphire;
   color: $text;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .close-button {
+.floating-notifications.background .notification-row .notification-background .close-button {
   margin: 7px;
   padding: 2px;
   border-radius: 6.3px;
@@ -122,18 +71,12 @@
   background-color: $red;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .close-button:hover {
+.floating-notifications.background .notification-row .notification-background .close-button:hover {
   background-color: $maroon;
   color: $base;
 }
 
-.floating-notifications.background
-  .notification-row
-  .notification-background
-  .close-button:active {
+.floating-notifications.background .notification-row .notification-background .close-button:active {
   background-color: $red;
   color: $base;
 }
@@ -185,64 +128,31 @@
   border-radius: 7px;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification.critical {
+.control-center .notification-row .notification-background .notification.critical {
   box-shadow: inset 0 0 7px 0 $red;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content {
+.control-center .notification-row .notification-background .notification .notification-content {
   margin: 7px;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content
-  .summary {
+.control-center .notification-row .notification-background .notification .notification-content .summary {
   color: $text;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content
-  .time {
+.control-center .notification-row .notification-background .notification .notification-content .time {
   color: $subtext0;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content
-  .body {
+.control-center .notification-row .notification-background .notification .notification-content .body {
   color: $text;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > * {
+.control-center .notification-row .notification-background .notification>*:last-child>* {
   min-height: 3.4em;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action {
+.control-center .notification-row .notification-background .notification>*:last-child>* .notification-action {
   border-radius: 7px;
   color: $text;
   background-color: $crust;
@@ -250,25 +160,13 @@
   margin: 7px;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action:hover {
+.control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
   box-shadow: inset 0 0 0 1px $surface1;
   background-color: $surface0;
   color: $text;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action:active {
+.control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:active {
   box-shadow: inset 0 0 0 1px $surface1;
   background-color: $sapphire;
   color: $text;
@@ -287,10 +185,7 @@
   color: $base;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .close-button:active {
+.control-center .notification-row .notification-background .close-button:active {
   background-color: $red;
   color: $base;
 }
@@ -307,7 +202,9 @@
   color: $text;
 }
 
-progressbar, progress, trough {
+progressbar,
+progress,
+trough {
   border-radius: 12.6px;
 }
 
@@ -319,7 +216,8 @@ progressbar {
   background-color: $red;
 }
 
-.notification.low progress, .notification.normal progress {
+.notification.low progress,
+.notification.normal progress {
   background-color: $blue;
 }
 
@@ -329,4 +227,44 @@ trough {
 
 .control-center trough {
   background-color: $surface1;
+}
+
+.control-center-dnd {
+  margin-top: 5px;
+  border-radius: 8px;
+  background: $surface0;
+  border: 1px s$surface1;
+  box-shadow: none;
+}
+
+.control-center-dnd:checked {
+  background: $surface0;
+}
+
+.control-center-dnd slider {
+  background: $surface1;
+  border-radius: 8px;
+}
+
+.widget-dnd {
+  margin: 0px;
+  font-size: 1.1rem;
+}
+
+.widget-dnd>switch {
+  font-size: initial;
+  border-radius: 8px;
+  background: $surface0;
+  border: 1px solid $surface1;
+  box-shadow: none;
+}
+
+.widget-dnd>switch:checked {
+  background: $surface0;
+}
+
+.widget-dnd>switch slider {
+  background: $surface1;
+  border-radius: 8px;
+  border: 1px solid $overlay0;
 }
