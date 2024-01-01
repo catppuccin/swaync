@@ -40,6 +40,12 @@
 2. Rename the downloaded theme to `style.css` and put it into `~/.config/swaync/`.
 3. If you're using a custom font, you will need to change the line `font-family: 'Ubuntu Nerd Font'` to your font of choice.
 4. Run `swaync-client -rs` to reload swaync css.
+- You can let sway manage your swaync theme:
+```sh
+set $flavor macchiato
+set $version v0.1.2.1
+exec_always if [ ! -f ~/.config/swaync/style.css ]; then $(mkdir -p ~/.config/swaync && curl -L https://github.com/catppuccin/swaync/releases/download/$version/$flavor.css -o ~/.config/swaync/style.css); fi
+```
 
 ## 💝 Thanks to
 
