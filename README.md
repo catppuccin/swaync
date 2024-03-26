@@ -43,7 +43,7 @@
 - You can let sway manage your swaync theme:
 ```sh
 set $flavor macchiato
-set $version v0.1.2.1
+set $version v0.2.0
 exec_always if [ ! -f ~/.config/swaync/style.css ]; then $(mkdir -p ~/.config/swaync && curl -L https://github.com/catppuccin/swaync/releases/download/$version/$flavor.css -o ~/.config/swaync/style.css); fi
 ```
 
