@@ -39,7 +39,6 @@ slider {
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
-  padding-left: 7px;
   margin: 7px;
 }
 
@@ -293,11 +292,6 @@ slider {
     color: $red;
 }
 
-.power-buttons,
-.powermode-buttons,
-.screenshot-buttons {
-
-}
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
@@ -344,4 +338,8 @@ slider {
 
 .widget-backlight .KB {
     padding-bottom: 1rem;
+}
+
+.image {
+  padding-right: 0.5rem;
 }
