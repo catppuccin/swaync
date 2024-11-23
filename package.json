@@ -12,7 +12,7 @@
   "author": "Catppuccin Org <releases@catppuccin.com>",
   "license": "MIT",
   "devDependencies": {
-    "@catppuccin/palette": "^0.1.6",
+    "@catppuccin/palette": "^0.2.0",
     "sass": "^1.58.3"
   }
 }
