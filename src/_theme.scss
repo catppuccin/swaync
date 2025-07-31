@@ -71,7 +71,21 @@ slider {
   border-radius: 7px;
   color: $text;
   box-shadow: inset 0 0 0 1px $surface1;
-  margin: 7px;
+  margin: 4px;
+  padding: 8px;
+  font-size: 0.2rem; /* controls the button size not text size*/
+}
+
+.notification .notification-action {
+  background-color: $surface0;
+}
+
+.notification .notification-action:hover {
+  background-color: $surface1;
+}
+
+.notification .notification-action:active {
+  background-color: $surface2;
 }
 
 .notification.critical progress {
@@ -105,18 +119,6 @@ slider {
   background-color: $base;
   color: $text;
   padding: 0;
-}
-
-.floating-notifications .notification .notification-action {
-  background-color: $surface0;
-}
-
-.floating-notifications .notification .notification-action:hover {
-  background-color: $surface1;
-}
-
-.floating-notifications .notification-action:active {
-  background-color: $surface2;
 }
 
 /* control center */
@@ -163,18 +165,6 @@ slider {
 
 .control-center .notification-background .notification {
   border-radius: 7px;
-}
-
-.control-center .notification-action {
-  background-color: $overlay0;
-}
-
-.control-center .notification-action:hover {
-  background-color: $overlay1;
-}
-
-.control-center .notification-action:active {
-  background-color: $overlay2;
 }
 
 /* dnd */
