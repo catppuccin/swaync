@@ -177,25 +177,11 @@ slider {
   background-color: $overlay2;
 }
 
-.control-center-dnd {
-  margin-top: 5px;
-  border-radius: 8px;
-  background: $surface0;
-  border: 1px solid $surface1;
-  box-shadow: none;
-}
-
-.control-center-dnd:checked {
-  background: $surface0;
-}
-
-.control-center-dnd slider {
-  background: $surface1;
-  border-radius: 8px;
-}
+/* dnd */
 
 .widget-dnd {
-  margin: 0px;
+  margin-top: 5px;
+  border-radius: 8px;
   font-size: 1.1rem;
 }
 
@@ -203,18 +189,16 @@ slider {
   font-size: initial;
   border-radius: 8px;
   background: $surface0;
-  border: 1px solid $surface1;
   box-shadow: none;
 }
 
 .widget-dnd > switch:checked {
-  background: $surface0;
+  background: $blue;
 }
 
 .widget-dnd > switch slider {
   background: $surface1;
   border-radius: 8px;
-  border: 1px solid $overlay0;
 }
 
 .widget-mpris .widget-mpris-player {
