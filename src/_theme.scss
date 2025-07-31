@@ -204,17 +204,57 @@ trough {
   border-radius: 8px;
 }
 
-.widget-mpris .widget-mpris-player {
+/* mpris */
+
+.widget-mpris-player {
   background: $surface0;
-  padding: 7px;
+  border-radius: 12.6px;
+  color: #cdd6f4;
 }
 
-.widget-mpris .widget-mpris-title {
+.mpris-overlay {
+  background-color: $surface0;
+  opacity: 0.9;
+  padding: 15px 10px;
+}
+
+.widget-mpris-album-art {
+  -gtk-icon-size: 100px;
+  border-radius: 12.6px;
+  margin: 0 10px;
+}
+
+.widget-mpris-title {
   font-size: 1.2rem;
+  color: $text;
 }
 
-.widget-mpris .widget-mpris-subtitle {
-  font-size: 0.8rem;
+.widget-mpris-subtitle {
+  font-size: 1rem;
+  color: $subtext1;
+}
+
+.widget-mpris button {
+  border-radius: 12.6px;
+  color: $text;
+  margin: 0 5px;
+  padding: 2px;
+}
+
+.widget-mpris button image {
+  -gtk-icon-size: 1.8rem;
+}
+
+.widget-mpris button:hover {
+  background-color: $surface0;
+}
+
+.widget-mpris button:active {
+  background-color: $surface1;
+}
+
+.widget-mpris button:disabled {
+  opacity: 0.5;
 }
 
 .widget-menubar > box > .menu-button-bar > button > label {
