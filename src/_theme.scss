@@ -9,15 +9,33 @@ trough highlight {
   background: $text;
 }
 
-scale trough {
-  margin: 0rem 1rem;
-  background-color: $surface0;
-  min-height: 8px;
-  min-width: 70px;
+scale {
+  margin: 0 7px;
 }
 
-slider {
+scale trough {
+  margin: 0rem 1rem;
+  min-height: 8px;
+  min-width: 70px;
+  border-radius: 12.6px;
+}
+
+trough slider {
+  margin: -10px;
+  border-radius: 12.6px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease;
   background-color: $blue;
+}
+
+trough slider:hover {
+  box-shadow:
+    0 0 2px rgba(0, 0, 0, 0.8),
+    0 0 8px $blue;
+}
+
+trough {
+  background-color: $surface0;
 }
 
 /* notifications */
@@ -119,11 +137,6 @@ slider {
   border-radius: 12.6px;
   padding: 3px 0;
 }
-
-.notification trough {
-  background-color: $surface0;
-}
-
 /* control center */
 
 .control-center {
@@ -234,12 +247,12 @@ slider {
 }
 
 .widget-volume {
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .widget-volume label {
-  font-size: 1.5rem;
   color: $sapphire;
+  padding: 0 1rem;
 }
 
 .widget-volume trough highlight {
