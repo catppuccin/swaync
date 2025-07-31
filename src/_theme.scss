@@ -83,6 +83,17 @@ slider {
   background-color: $blue;
 }
 
+.notification progress,
+.notification trough,
+.notification progressbar {
+  border-radius: 12.6px;
+  padding: 3px 0;
+}
+
+.notification trough {
+  background-color: $surface0;
+}
+
 /* floating notifications */
 
 .floating-notifications .notification-background {
