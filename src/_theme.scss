@@ -159,6 +159,10 @@ trough {
   border-radius: 7px;
 }
 
+.control-center .notification-background .notification.low {
+  opacity: 0.8;
+}
+
 .control-center .widget-title > label {
   color: $text;
   font-size: 1.3em;
