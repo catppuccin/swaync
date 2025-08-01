@@ -152,7 +152,7 @@ trough {
 .control-center .notification-background {
   border-radius: 7px;
   box-shadow: inset 0 0 0 1px $surface1;
-  margin: 10px 0;
+  margin: 4px 10px;
 }
 
 .control-center .notification-background .notification {
@@ -182,6 +182,19 @@ trough {
 
 .control-center .widget-title button:active {
   background-color: $surface2;
+}
+
+.control-center .notification-group {
+  margin-top: 10px;
+}
+
+scrollbar slider {
+  margin: -3px;
+  opacity: 0.8;
+}
+
+scrollbar trough {
+  margin: 2px 0;
 }
 
 /* dnd */
