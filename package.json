@@ -1,5 +1,6 @@
 {
   "name": "swaync",
+  "private": true,
   "version": "0.2.2",
   "description": "soothing pastel theme for swaync",
   "repository": {
@@ -12,7 +13,7 @@
   "author": "Catppuccin Org <releases@catppuccin.com>",
   "license": "MIT",
   "devDependencies": {
-    "@catppuccin/palette": "^0.1.6",
-    "sass": "^1.58.3"
+    "@catppuccin/palette": "^1.7.1",
+    "sass": "^1.89.2"
   }
 }
