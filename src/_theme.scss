@@ -188,8 +188,8 @@ trough {
   margin-top: 10px;
 }
 
-.control-center .notification-group:focus {
-  filter: brightness(85%);
+.control-center .notification-group:focus .notification-background {
+  background-color: $surface0;
 }
 
 scrollbar slider {
