@@ -36,13 +36,26 @@
 
 ## Usage
 
-1. Download your preferred flavor from the [latest release](https://github.com/catppuccin/swaync/releases/latest).
-2. Rename the downloaded theme to `style.css` and put it into `~/.config/swaync/`.
-3. If you're using a custom font, you will need to change the line `font-family: 'Ubuntu Nerd Font'` to your font of choice.
+1. Download your preferred flavor from [themes](themes/).
+2. Rename the downloaded theme to `style.css` and put it into
+   `~/.config/swaync/`.
+3. If you're using a custom font, you will need to change the line
+   `font-family: 'Ubuntu Nerd Font'` to your font of choice.
+
+## Building yourself?
+
+It's never been simpler! Simply:
+
+1. Clone the repository!
+2. Make any of your changes to the
+   [`templates/swaync.tera`](templates/swaync.tera) file.
+3. Run `just build` in the root of the cloned repo.
+4. Collect your new theme files, generated as [`themes/<flavor>.css`](themes/)!
 
 ## 💝 Thanks to
 
 - [Isabel Roses](https://github.com/isabelroses)
+- [Toria](https://github.com/ninetailedtori)
 
 &nbsp;
 
