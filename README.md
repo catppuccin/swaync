@@ -40,7 +40,9 @@
 2. Rename the downloaded theme to `style.css` and put it into
    `~/.config/swaync/`.
 3. If you're using a custom font, you will need to change the line
-   `font-family: 'Ubuntu Nerd Font'` to your font of choice.
+   `font-family: 'JetbrainsMono Nerd Font'` to your font of choice.
+4. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
+   prioritize this style!
 
 ## Building yourself?
 
