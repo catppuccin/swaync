@@ -1,5 +1,4 @@
 * {
-  all: unset;
   font-size: 14px;
   font-family: "JetbrainsMono Nerd Font";
 }
@@ -7,7 +6,7 @@
 :root {
   --cc-bg: #1e1e2e;
 
-  --noti-border-color: #6c7086;
+  --noti-border-color: #b4befe;
   --noti-bg: #45475a;
   --noti-bg-alpha: 0.9;
   --noti-bg-darker: #313244;
@@ -25,7 +24,7 @@
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
   --notification-group-icon-size: 32px;
 
-  --border: 5px solid var(--noti-border-color);
+  --border: 2px solid var(--noti-border-color);
   --border-radius: 10px;
 
   --notification-shadow:
