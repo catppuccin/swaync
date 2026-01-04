@@ -47,10 +47,14 @@
 It's never been simpler! Simply:
 
 1. Clone the repository!
-2. Make any of your changes to the
-   [`templates/swaync.tera`](templates/swaync.tera) file.
-3. Run `just build` in the root of the cloned repo.
+2. Make any of your changes to the [`swaync.tera`](swaync.tera) file.
+3. Run `whiskers swaync.tera` in the same (catppuccin/swaync root) directory.
 4. Collect your new theme files, generated as [`themes/<flavor>.css`](themes/)!
+
+Required packages to build it yourself:
+
+- [git](https://git-scm.com/),
+- [catppuccin/whiskers](https://whiskers.catppuccin.com/)
 
 ## 💝 Thanks to
 
