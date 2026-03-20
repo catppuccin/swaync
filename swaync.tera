@@ -5,11 +5,6 @@ whiskers:
     - flavor
   filename: "themes/{{ flavor.identifier }}.css"
 ---
-* {
-  font-size: 14px;
-  font-family: "JetbrainsMono Nerd Font";
-}
-
 :root {
   --cc-bg: #{{ base.hex }};
 
