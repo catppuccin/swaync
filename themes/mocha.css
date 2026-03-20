@@ -1,8 +1,3 @@
-* {
-  font-size: 14px;
-  font-family: "JetbrainsMono Nerd Font";
-}
-
 :root {
   --cc-bg: #1e1e2e;
 
@@ -11,14 +6,14 @@
   --noti-bg-alpha: 0.9;
   --noti-bg-darker: #313244;
   --noti-bg-hover: #585b70;
-  --noti-bg-focus: fade(#9399b2, 30%);
+  --noti-bg-focus: #9399b24d;
   --noti-close-bg: #f38ba8;
   --noti-close-bg-hover: #eba0ac;
 
   --text-color: #cdd6f4;
   --text-color-disabled: #a6adc8;
 
-  --bg-selected: fade(#f5e0dc, 30%);
+  --bg-selected: #f5e0dc4d;
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -28,9 +23,9 @@
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0 0 1px fade(#313244, 30%),
-    0 1px 3px 1px fade(#313244, 70%),
-    0 2px 6px 2px fade(#313244, 30%);
+    0 0   0   1px #3132444d,
+    0 1px 3px 1px #313244b3,
+    0 2px 6px 2px #3132444d;
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
