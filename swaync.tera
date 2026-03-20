@@ -13,14 +13,14 @@ whiskers:
   --noti-bg-alpha: 0.9;
   --noti-bg-darker: #{{ surface0.hex }};
   --noti-bg-hover: #{{ surface2.hex }};
-  --noti-bg-focus: fade(#{{ overlay2.hex }}, 30%);
+  --noti-bg-focus: #{{ overlay2 | mod(opacity=77) | get(key="hex") }};
   --noti-close-bg: #{{ red.hex }};
   --noti-close-bg-hover: #{{ maroon.hex }};
 
   --text-color: #{{ text.hex }};
   --text-color-disabled: #{{ subtext0.hex }};
 
-  --bg-selected: fade(#{{ rosewater.hex }}, 30%);
+  --bg-selected: #{{ rosewater | mod(opacity=77) | get(key="hex") }};
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -30,9 +30,9 @@ whiskers:
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0 0 1px fade(#{{ surface0.hex }}, 30%),
-    0 1px 3px 1px fade(#{{ surface0.hex }}, 70%),
-    0 2px 6px 2px fade(#{{ surface0.hex }}, 30%);
+    0 0 0 1px#{{ surface0 | mod(opacity=77) | get(key="hex") }},
+    0 1px 3px 1px #{{ surface0 | mod(lightness=179) | get(key="hex") }},
+    0 2px 6px 2px #{{ surface0 | mod(opacity=77) | get(key="hex") }};
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
