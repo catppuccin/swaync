@@ -39,24 +39,11 @@
 1. Download your preferred flavor from the [`themes/`](themes/) folder.
 2. Rename the downloaded theme to `style.css` and put it into
    `~/.config/swaync/`.
-3. If you're using a custom font, you will need to change the line
-   `font-family: 'JetbrainsMono Nerd Font'` to your font of choice.
-4. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
+3. If you're using a custom font, you will need to add lines for
+   `font-family: 'JetbrainsMono Nerd Font'` and `font-size: 14px` to `*`
+   for your font of choice.
+5. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
    prioritize this style!
-
-## Building yourself?
-
-It's never been simpler! Simply:
-
-1. Clone the repository!
-2. Make any of your changes to the [`swaync.tera`](swaync.tera) file.
-3. Run `whiskers swaync.tera` in the same (catppuccin/swaync root) directory.
-4. Collect your new theme files, generated as [`themes/<flavor>.css`](themes/)!
-
-Required packages to build it yourself:
-
-- [git](https://git-scm.com/),
-- [catppuccin/whiskers](https://whiskers.catppuccin.com/)
 
 ## 💝 Thanks to
 
