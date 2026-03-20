@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Download your preferred flavor from [themes](themes/).
+1. Download your preferred flavor from the [`themes/`](themes/) folder.
 2. Rename the downloaded theme to `style.css` and put it into
    `~/.config/swaync/`.
 3. If you're using a custom font, you will need to change the line
