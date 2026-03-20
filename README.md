@@ -37,13 +37,13 @@
 ## Usage
 
 1. Download your preferred flavor from the [`themes/`](themes/) folder.
-2. Rename the downloaded theme to `style.css` and put it into
-   `~/.config/swaync/`.
-3. If you're using a custom font, you will need to add lines for
-   `font-family: 'JetbrainsMono Nerd Font'` and `font-size: 14px` to `*`
-   for your font of choice.
-5. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
+2. Put the downloaded file into `~/.config/swaync/`.
+3. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
    prioritize this style!
+4. In `~/.config/swaync/style.css`, add the line `@import url(<flavor>.css);` at
+   the top of the file.
+5. Any personal theming of SwayNC should now reside in `style.css`, and this
+   will keep it separate from our theme!
 
 ## 💝 Thanks to
 
