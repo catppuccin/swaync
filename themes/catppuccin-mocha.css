@@ -62,7 +62,7 @@ trough slider {
 trough slider:hover {
   box-shadow:
     0 0 2px 1e1e2e4d,
-    0 0 8px 89b4fa;
+    0 0 8px 89b4fa4d;
 }
 
 trough {
@@ -74,12 +74,12 @@ trough {
 .notification-background {
   box-shadow:
     0 0 8px 0 1e1e2e4d,
-    inset 0 0 0 1px 45475a;
+    inset 0 0 0 1px 45475a4d;
   background: 181825;
   color: cdd6f4;
 
   .notification.critical {
-    box-shadow: inset 0 0 7px 0 f38ba8;
+    box-shadow: inset 0 0 7px 0 f38ba84d;
   }
 
   .notification-content {
@@ -112,7 +112,7 @@ trough {
   .notification-action {
     color: cdd6f4;
     background-color: 313244;
-    box-shadow: inset 0 0 0 1px 45475a;
+    box-shadow: inset 0 0 0 1px 45475a4d;
 
     &:hover {
       background-color: 45475a;
@@ -137,12 +137,12 @@ trough {
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 1e1e2e4d, inset 0 0 0 1px 313244;
+  box-shadow: 0 0 8px 0 1e1e2e4d, inset 0 0 0 1px 3132444d;
   background-color: 1e1e2e;
   color: cdd6f4;
 
   .notification-background {
-    box-shadow: inset 0 0 0 1px 45475a;
+    box-shadow: inset 0 0 0 1px 45475a4d;
 
     .notification.low {
       opacity: 0.8;
@@ -157,7 +157,7 @@ trough {
     button {
       color: cdd6f4;
       background-color: 313244;
-      box-shadow: inset 0 0 0 1px 45475a;
+      box-shadow: inset 0 0 0 1px 45475a4d;
 
       &:hover {
         background-color: 45475a;

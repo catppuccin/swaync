@@ -70,7 +70,7 @@ trough slider {
 trough slider:hover {
   box-shadow:
     0 0 2px {{ base | mod(opacity=0.3) | hex }},
-    0 0 8px {{ blue.hex }};
+    0 0 8px {{ blue | mod(opacity=0.3) | hex }};
 }
 
 trough {
@@ -82,12 +82,12 @@ trough {
 .notification-background {
   box-shadow:
     0 0 8px 0 {{ base | mod(opacity=0.3) | hex }},
-    inset 0 0 0 1px {{ surface1.hex }};
+    inset 0 0 0 1px {{ surface1 | mod(opacity=0.3) | hex }};
   background: {{ mantle.hex }};
   color: {{ text.hex }};
 
   .notification.critical {
-    box-shadow: inset 0 0 7px 0 {{ red.hex }};
+    box-shadow: inset 0 0 7px 0 {{ red | mod(opacity=0.3) | hex }};
   }
 
   .notification-content {
@@ -120,7 +120,7 @@ trough {
   .notification-action {
     color: {{ text.hex }};
     background-color: {{ surface0.hex }};
-    box-shadow: inset 0 0 0 1px {{ surface1.hex }};
+    box-shadow: inset 0 0 0 1px {{ surface1 | mod(opacity=0.3) | hex }};
 
     &:hover {
       background-color: {{ surface1.hex }};
@@ -145,12 +145,12 @@ trough {
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 {{ base | mod(opacity=0.3) | hex }}, inset 0 0 0 1px {{ surface0.hex }};
+  box-shadow: 0 0 8px 0 {{ base | mod(opacity=0.3) | hex }}, inset 0 0 0 1px {{ surface0 | mod(opacity=0.3) | hex }};
   background-color: {{ base.hex }};
   color: {{ text.hex }};
 
   .notification-background {
-    box-shadow: inset 0 0 0 1px {{ surface1.hex }};
+    box-shadow: inset 0 0 0 1px {{ surface1 | mod(opacity=0.3) | hex }};
 
     .notification.low {
       opacity: 0.8;
@@ -165,7 +165,7 @@ trough {
     button {
       color: {{ text.hex }};
       background-color: {{ surface0.hex }};
-      box-shadow: inset 0 0 0 1px {{ surface1.hex }};
+      box-shadow: inset 0 0 0 1px {{ surface1 | mod(opacity=0.3) | hex }};
 
       &:hover {
         background-color: {{ surface1.hex }};
