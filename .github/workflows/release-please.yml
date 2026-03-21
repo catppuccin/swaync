@@ -33,6 +33,6 @@ jobs:
       - uses: actions/setup-node@v4
       - run: npm ci
       - run: npm run build
-      - run: gh release upload ${{ needs.release-please.outputs.tag_name }} dist/*.css
+      - run: gh release upload ${{ needs.release-please.outputs.tag_name }} themes/*.css assets/style.css
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
