@@ -26,8 +26,6 @@
     0 0   0   1px 4145594d,
     0 1px 3px 1px 414559b3,
     0 2px 6px 2px 4145594d;
-  --font-size-body: 14px;
-  --font-size-summary: 15px;
 
   /* Deprecated variables (because of their typos). Keeeping them around for backwards compatibility. */
   --hover-transition: background 0.15s ease-in-out;
@@ -211,34 +209,18 @@ scrollbar {
 .mpris-overlay {
   background-color: 414559;
   opacity: 0.9;
-  padding: 15px 10px;
-}
-
-.widget-mpris-album-art {
-  -gtk-icon-size: 100px;
-  border-radius: 12.6px;
-  margin: 0 10px;
 }
 
 .widget-mpris-title {
-  font-size: 1.2rem;
   color: c6d0f5;
 }
 
 .widget-mpris-subtitle {
-  font-size: 1rem;
   color: b5bfe2;
 }
 
 .widget-mpris button {
-  border-radius: 12.6px;
   color: c6d0f5;
-  margin: 0 5px;
-  padding: 2px;
-
-  image {
-    -gtk-icon-size: 1.8rem;
-  }
 
   &:hover {
     background-color: 414559;
@@ -255,11 +237,6 @@ scrollbar {
 
 .widget-menubar {
   & > .menu-button-bar {
-    & > button > label {
-      font-size: 3rem;
-      padding: 0.5rem 2rem;
-    }
-
     & > :last-child {
       color: e78284;
     }
@@ -274,21 +251,12 @@ scrollbar {
 
 .control-center .widget-label > label {
   color: c6d0f5;
-  font-size: 2rem;
-}
-
-.widget-buttons-grid {
-  padding-top: 1rem;
-  & flowboxchild > button label {
-    font-size: 2.5rem;
-  }
 }
 
 .widget-volume {
   padding: 1rem 0;
   label {
     color: 85c1dc;
-    padding: 0 1rem;
   }
 
   trough highlight {
@@ -302,15 +270,6 @@ scrollbar {
   }
 
   label {
-    font-size: 1.5rem;
     color: e5c890;
   }
-
-  .KB {
-    padding-bottom: 1rem;
-  }
-}
-
-.image {
-  padding-right: 0.5rem;
 }

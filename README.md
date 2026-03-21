@@ -40,10 +40,17 @@
 2. Put the downloaded file into `~/.config/swaync/`.
 3. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
    prioritize this style!
-4. In `~/.config/swaync/style.css`, add the line `@import url(catppuccin-<flavor>.css);` at
-   the top of the file.
+4. In `~/.config/swaync/style.css`, add the line
+   `@import url(catppuccin-<flavor>.css);` at the top of the file.
 5. Any personal theming of SwayNC should now reside in `style.css`, and this
    will keep it separate from our theme!
+
+## FAQ
+
+- Q: I have no idea what I should customise! What do I do now?\
+  A: Please use the provided assets/style.css file if you need a default css
+  template to work from. It includes some of the default config that was
+  provided in an older version of this theme.
 
 ## 💝 Thanks to
 
