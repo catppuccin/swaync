@@ -1,9 +1,10 @@
 ---
 whiskers:
-  version: "^2.2.0"
+  version: "^2.5.1"
   matrix:
     - flavor
   filename: "themes/{{ flavor.identifier }}.css"
+  hex_format: #{{r}}{{g}}{{b}}
 ---
 :root {
   --cc-bg: #{{ base.hex }};
@@ -13,14 +14,14 @@ whiskers:
   --noti-bg-alpha: 0.9;
   --noti-bg-darker: #{{ surface0.hex }};
   --noti-bg-hover: #{{ surface2.hex }};
-  --noti-bg-focus: #{{ overlay2 | mod(opacity=0.3) | get(key="hex") }};
+  --noti-bg-focus: #{{ overlay2.hex }}4d;
   --noti-close-bg: #{{ red.hex }};
   --noti-close-bg-hover: #{{ maroon.hex }};
 
   --text-color: #{{ text.hex }};
   --text-color-disabled: #{{ subtext0.hex }};
 
-  --bg-selected: #{{ rosewater | mod(opacity=0.3) | get(key="hex") }};
+  --bg-selected: #{{ rosewater.hex }}4d;
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -30,9 +31,9 @@ whiskers:
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0   0   1px #{{ surface0 | mod(opacity=0.3) | get(key="hex") }},
-    0 1px 3px 1px #{{ surface0 | mod(opacity=0.7) | get(key="hex") }},
-    0 2px 6px 2px #{{ surface0 | mod(opacity=0.3) | get(key="hex") }};
+    0 0   0   1px #{{ surface0.hex }}4d,
+    0 1px 3px 1px #{{ surface0.hex }}b3,
+    0 2px 6px 2px #{{ surface0.hex }}4d;
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
