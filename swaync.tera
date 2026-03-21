@@ -3,7 +3,7 @@ whiskers:
   version: "^2.5.1"
   matrix:
     - flavor
-  filename: "themes/{{ flavor.identifier }}.css"
+  filename: "themes/catppuccin-{{ flavor.identifier }}.css"
   hex_format: #{{r}}{{g}}{{b}}
 ---
 :root {
