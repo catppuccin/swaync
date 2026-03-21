@@ -1,19 +1,19 @@
 :root {
-  --cc-bg: #24273a;
+  --cc-bg: 24273a;
 
-  --noti-border-color: #b7bdf8;
-  --noti-bg: #494d64;
+  --noti-border-color: b7bdf8;
+  --noti-bg: 494d64;
   --noti-bg-alpha: 0.9;
-  --noti-bg-darker: #363a4f;
-  --noti-bg-hover: #5b6078;
-  --noti-bg-focus: #939ab74d;
-  --noti-close-bg: #ed8796;
-  --noti-close-bg-hover: #ee99a0;
+  --noti-bg-darker: 363a4f;
+  --noti-bg-hover: 5b6078;
+  --noti-bg-focus: 939ab74d;
+  --noti-close-bg: ed8796;
+  --noti-close-bg-hover: ee99a0;
 
-  --text-color: #cad3f5;
-  --text-color-disabled: #a5adcb;
+  --text-color: cad3f5;
+  --text-color-disabled: a5adcb;
 
-  --bg-selected: #f4dbd64d;
+  --bg-selected: f4dbd64d;
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -23,9 +23,9 @@
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0   0   1px #363a4f4d,
-    0 1px 3px 1px #363a4fb3,
-    0 2px 6px 2px #363a4f4d;
+    0 0   0   1px 363a4f4d,
+    0 1px 3px 1px 363a4fb3,
+    0 2px 6px 2px 363a4f4d;
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
@@ -42,6 +42,7 @@
           .app-icon {
             -gtk-icon-shadow: var(--notification-shadow);
           }
+
           .body-image {
             background-color: var(--cc-bg);
           }
@@ -52,143 +53,98 @@
 }
 
 trough highlight {
-  background: #cad3f5;
-}
-
-scale {
-  margin: 0 7px;
-}
-
-scale trough {
-  margin: 0rem 1rem;
-  min-height: 8px;
-  min-width: 70px;
-  border-radius: 12.6px;
+  background: cad3f5;
 }
 
 trough slider {
-  margin: -10px;
-  border-radius: 12.6px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease;
-  background-color: #8aadf4;
+  box-shadow: 0 0 2px 24273a4d;
+  background-color: 8aadf4;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8), 0 0 8px #8aadf4;
+  box-shadow:
+    0 0 2px 24273a4d,
+    0 0 8px 8aadf4;
 }
 
 trough {
-  background-color: #363a4f;
+  background-color: 363a4f;
 }
 
 /* notifications */
 
 .notification-background {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #494d64;
-  border-radius: 12.6px;
-  margin: 18px;
-  background: #1e2030;
-  color: #cad3f5;
-  padding: 0;
-
-  .notification {
-    padding: 7px;
-    border-radius: 12.6px;
-
-    & > *:last-child > * {
-      min-height: 3.4em;
-    }
-
-    progress, trough, progressbar {
-      border-radius: 12.6px;
-      padding: 3px 0;
-    }
-  }
+  box-shadow:
+    0 0 8px 0 24273a4d,
+    inset 0 0 0 1px 494d64;
+  background: 1e2030;
+  color: cad3f5;
 
   .notification.critical {
-    box-shadow: inset 0 0 7px 0 #ed8796;
+    box-shadow: inset 0 0 7px 0 ed8796;
   }
 
   .notification-content {
-    margin: 7px;
-
-    overlay {
-      /* icons */
-      margin: 4px;
-    }
-
     .summary {
-      color: #cad3f5;
+      color: cad3f5;
     }
 
     .time {
-      color: #a5adcb;
+      color: a5adcb;
     }
 
     .body {
-      color: #b8c0e0;
+      color: b8c0e0;
     }
   }
 
   .close-button {
-    margin: 7px;
-    padding: 2px;
-    border-radius: 6.3px;
-    color: #24273a;
-    background-color: #ed8796;
+    color: 24273a;
+    background-color: ed8796;
 
     &:hover {
-      background-color: #ee99a0;
+      background-color: ee99a0;
     }
+
     &:active {
-      background-color: #f5bde6;
+      background-color: f5bde6;
     }
   }
 
   .notification-action {
-    border-radius: 7px;
-    color: #cad3f5;
-    background-color: #363a4f;
-    box-shadow: inset 0 0 0 1px #494d64;
-    margin: 4px;
-    padding: 8px;
-    font-size: 0.2rem; /* controls the button size not text size*/
+    color: cad3f5;
+    background-color: 363a4f;
+    box-shadow: inset 0 0 0 1px 494d64;
+
     &:hover {
-      background-color: #494d64;
+      background-color: 494d64;
     }
+
     &:active {
-      background-color: #5b6078;
+      background-color: 5b6078;
     }
 
     .notification.critical progress {
-      background-color: #ed8796;
+      background-color: ed8796;
     }
 
     .notification.low progress {
-      background-color: #8bd5ca;
+      background-color: 8bd5ca;
     }
+
     .notification.normal progress {
-      background-color: #f5a97f;
+      background-color: f5a97f;
     }
   }
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #363a4f;
-  border-radius: 12.6px;
-  background-color: #24273a;
-  color: #cad3f5;
-  padding: 14px;
+  box-shadow: 0 0 8px 0 24273a4d, inset 0 0 0 1px 363a4f;
+  background-color: 24273a;
+  color: cad3f5;
 
   .notification-background {
-    border-radius: 7px;
-    box-shadow: inset 0 0 0 1px #494d64;
-    margin: 4px 10px;
-
-    .notification {
-      border-radius: 7px;
-    }
+    box-shadow: inset 0 0 0 1px 494d64;
 
     .notification.low {
       opacity: 0.8;
@@ -197,67 +153,50 @@ trough {
 
   .widget-title {
     & > label {
-      color: #cad3f5;
-      font-size: 1.3em;
+      color: cad3f5;
     }
 
     button {
-      border-radius: 7px;
-      color: #cad3f5;
-      background-color: #363a4f;
-      box-shadow: inset 0 0 0 1px #494d64;
-      padding: 8px;
+      color: cad3f5;
+      background-color: 363a4f;
+      box-shadow: inset 0 0 0 1px 494d64;
 
       &:hover {
-        background-color: #494d64;
+        background-color: 494d64;
       }
 
       &:active {
-        background-color: #5b6078;
+        background-color: 5b6078;
       }
     }
   }
 
   .notification-group {
-    margin-top: 10px;
-
     &:focus .notification-background {
-      background-color: #363a4f;
+      background-color: 363a4f;
     }
   }
 }
 
 scrollbar {
   slider {
-    margin: -3px;
     opacity: 0.8;
-  }
-
-  trough {
-    margin: 2px 0;
   }
 }
 
 /* dnd */
 
 .widget-dnd {
-  margin-top: 5px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-
   switch {
-    font-size: initial;
-    border-radius: 8px;
-    background: #363a4f;
+    background: 363a4f;
     box-shadow: none;
 
     &:checked {
-      background: #8aadf4;
+      background: 8aadf4;
     }
 
     slider {
-      background: #494d64;
-      border-radius: 8px;
+      background: 494d64;
     }
   }
 }
@@ -265,13 +204,12 @@ scrollbar {
 /* mpris */
 
 .widget-mpris-player {
-  background: #363a4f;
-  border-radius: 12.6px;
-  color: #cdd6f4;
+  background: 363a4f;
+  color: cad3f5;
 }
 
 .mpris-overlay {
-  background-color: #363a4f;
+  background-color: 363a4f;
   opacity: 0.9;
   padding: 15px 10px;
 }
@@ -284,17 +222,17 @@ scrollbar {
 
 .widget-mpris-title {
   font-size: 1.2rem;
-  color: #cad3f5;
+  color: cad3f5;
 }
 
 .widget-mpris-subtitle {
   font-size: 1rem;
-  color: #b8c0e0;
+  color: b8c0e0;
 }
 
 .widget-mpris button {
   border-radius: 12.6px;
-  color: #cad3f5;
+  color: cad3f5;
   margin: 0 5px;
   padding: 2px;
 
@@ -303,11 +241,11 @@ scrollbar {
   }
 
   &:hover {
-    background-color: #363a4f;
+    background-color: 363a4f;
   }
 
   &:active {
-    background-color: #494d64;
+    background-color: 494d64;
   }
 
   &:disabled {
@@ -323,7 +261,7 @@ scrollbar {
     }
 
     & > :last-child {
-      color: #ed8796;
+      color: ed8796;
     }
   }
 }
@@ -331,11 +269,11 @@ scrollbar {
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
-  background: #363a4f;
+  background: 363a4f;
 }
 
 .control-center .widget-label > label {
-  color: #cad3f5;
+  color: cad3f5;
   font-size: 2rem;
 }
 
@@ -349,23 +287,23 @@ scrollbar {
 .widget-volume {
   padding: 1rem 0;
   label {
-    color: #7dc4e4;
+    color: 7dc4e4;
     padding: 0 1rem;
   }
 
   trough highlight {
-    background: #7dc4e4;
+    background: 7dc4e4;
   }
 }
 
 .widget-backlight {
   trough highlight {
-    background: #eed49f;
+    background: eed49f;
   }
 
   label {
     font-size: 1.5rem;
-    color: #eed49f;
+    color: eed49f;
   }
 
   .KB {

@@ -7,21 +7,21 @@ whiskers:
   hex_format: #{{r}}{{g}}{{b}}
 ---
 :root {
-  --cc-bg: #{{ base.hex }};
+  --cc-bg: {{ base.hex }};
 
-  --noti-border-color: #{{ lavender.hex }};
-  --noti-bg: #{{ surface1.hex }};
+  --noti-border-color: {{ lavender.hex }};
+  --noti-bg: {{ surface1.hex }};
   --noti-bg-alpha: 0.9;
-  --noti-bg-darker: #{{ surface0.hex }};
-  --noti-bg-hover: #{{ surface2.hex }};
-  --noti-bg-focus: #{{ overlay2.hex }}4d;
-  --noti-close-bg: #{{ red.hex }};
-  --noti-close-bg-hover: #{{ maroon.hex }};
+  --noti-bg-darker: {{ surface0.hex }};
+  --noti-bg-hover: {{ surface2.hex }};
+  --noti-bg-focus: {{ overlay2.hex }}4d;
+  --noti-close-bg: {{ red.hex }};
+  --noti-close-bg-hover: {{ maroon.hex }};
 
-  --text-color: #{{ text.hex }};
-  --text-color-disabled: #{{ subtext0.hex }};
+  --text-color: {{ text.hex }};
+  --text-color-disabled: {{ subtext0.hex }};
 
-  --bg-selected: #{{ rosewater.hex }}4d;
+  --bg-selected: {{ rosewater.hex }}4d;
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -31,9 +31,9 @@ whiskers:
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0   0   1px #{{ surface0.hex }}4d,
-    0 1px 3px 1px #{{ surface0.hex }}b3,
-    0 2px 6px 2px #{{ surface0.hex }}4d;
+    0 0   0   1px {{ surface0.hex }}4d,
+    0 1px 3px 1px {{ surface0.hex }}b3,
+    0 2px 6px 2px {{ surface0.hex }}4d;
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
@@ -50,6 +50,7 @@ whiskers:
           .app-icon {
             -gtk-icon-shadow: var(--notification-shadow);
           }
+
           .body-image {
             background-color: var(--cc-bg);
           }
@@ -60,143 +61,98 @@ whiskers:
 }
 
 trough highlight {
-  background: #{{ text.hex }};
-}
-
-scale {
-  margin: 0 7px;
-}
-
-scale trough {
-  margin: 0rem 1rem;
-  min-height: 8px;
-  min-width: 70px;
-  border-radius: 12.6px;
+  background: {{ text.hex }};
 }
 
 trough slider {
-  margin: -10px;
-  border-radius: 12.6px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease;
-  background-color: #{{ blue.hex }};
+  box-shadow: 0 0 2px {{ base.hex }}4d;
+  background-color: {{ blue.hex }};
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8), 0 0 8px #{{ blue.hex }};
+  box-shadow:
+    0 0 2px {{ base.hex }}4d,
+    0 0 8px {{ blue.hex }};
 }
 
 trough {
-  background-color: #{{ surface0.hex }};
+  background-color: {{ surface0.hex }};
 }
 
 /* notifications */
 
 .notification-background {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #{{ surface1.hex }};
-  border-radius: 12.6px;
-  margin: 18px;
-  background: #{{ mantle.hex }};
-  color: #{{ text.hex }};
-  padding: 0;
-
-  .notification {
-    padding: 7px;
-    border-radius: 12.6px;
-
-    & > *:last-child > * {
-      min-height: 3.4em;
-    }
-
-    progress, trough, progressbar {
-      border-radius: 12.6px;
-      padding: 3px 0;
-    }
-  }
+  box-shadow:
+    0 0 8px 0 {{ base.hex }}4d,
+    inset 0 0 0 1px {{ surface1.hex }};
+  background: {{ mantle.hex }};
+  color: {{ text.hex }};
 
   .notification.critical {
-    box-shadow: inset 0 0 7px 0 #{{ red.hex }};
+    box-shadow: inset 0 0 7px 0 {{ red.hex }};
   }
 
   .notification-content {
-    margin: 7px;
-
-    overlay {
-      /* icons */
-      margin: 4px;
-    }
-
     .summary {
-      color: #{{ text.hex }};
+      color: {{ text.hex }};
     }
 
     .time {
-      color: #{{ subtext0.hex }};
+      color: {{ subtext0.hex }};
     }
 
     .body {
-      color: #{{ subtext1.hex }};
+      color: {{ subtext1.hex }};
     }
   }
 
   .close-button {
-    margin: 7px;
-    padding: 2px;
-    border-radius: 6.3px;
-    color: #{{ base.hex }};
-    background-color: #{{ red.hex }};
+    color: {{ base.hex }};
+    background-color: {{ red.hex }};
 
     &:hover {
-      background-color: #{{ maroon.hex }};
+      background-color: {{ maroon.hex }};
     }
+
     &:active {
-      background-color: #{{ pink.hex }};
+      background-color: {{ pink.hex }};
     }
   }
 
   .notification-action {
-    border-radius: 7px;
-    color: #{{ text.hex }};
-    background-color: #{{ surface0.hex }};
-    box-shadow: inset 0 0 0 1px #{{ surface1.hex }};
-    margin: 4px;
-    padding: 8px;
-    font-size: 0.2rem; /* controls the button size not text size*/
+    color: {{ text.hex }};
+    background-color: {{ surface0.hex }};
+    box-shadow: inset 0 0 0 1px {{ surface1.hex }};
+
     &:hover {
-      background-color: #{{ surface1.hex }};
+      background-color: {{ surface1.hex }};
     }
+
     &:active {
-      background-color: #{{ surface2.hex }};
+      background-color: {{ surface2.hex }};
     }
 
     .notification.critical progress {
-      background-color: #{{ red.hex }};
+      background-color: {{ red.hex }};
     }
 
     .notification.low progress {
-      background-color: #{{ teal.hex }};
+      background-color: {{ teal.hex }};
     }
+
     .notification.normal progress {
-      background-color: #{{ peach.hex }};
+      background-color: {{ peach.hex }};
     }
   }
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #{{ surface0.hex }};
-  border-radius: 12.6px;
-  background-color: #{{ base.hex }};
-  color: #{{ text.hex }};
-  padding: 14px;
+  box-shadow: 0 0 8px 0 {{ base.hex }}4d, inset 0 0 0 1px {{ surface0.hex }};
+  background-color: {{ base.hex }};
+  color: {{ text.hex }};
 
   .notification-background {
-    border-radius: 7px;
-    box-shadow: inset 0 0 0 1px #{{ surface1.hex }};
-    margin: 4px 10px;
-
-    .notification {
-      border-radius: 7px;
-    }
+    box-shadow: inset 0 0 0 1px {{ surface1.hex }};
 
     .notification.low {
       opacity: 0.8;
@@ -205,67 +161,50 @@ trough {
 
   .widget-title {
     & > label {
-      color: #{{ text.hex }};
-      font-size: 1.3em;
+      color: {{ text.hex }};
     }
 
     button {
-      border-radius: 7px;
-      color: #{{ text.hex }};
-      background-color: #{{ surface0.hex }};
-      box-shadow: inset 0 0 0 1px #{{ surface1.hex }};
-      padding: 8px;
+      color: {{ text.hex }};
+      background-color: {{ surface0.hex }};
+      box-shadow: inset 0 0 0 1px {{ surface1.hex }};
 
       &:hover {
-        background-color: #{{ surface1.hex }};
+        background-color: {{ surface1.hex }};
       }
 
       &:active {
-        background-color: #{{ surface2.hex }};
+        background-color: {{ surface2.hex }};
       }
     }
   }
 
   .notification-group {
-    margin-top: 10px;
-
     &:focus .notification-background {
-      background-color: #{{ surface0.hex }};
+      background-color: {{ surface0.hex }};
     }
   }
 }
 
 scrollbar {
   slider {
-    margin: -3px;
     opacity: 0.8;
-  }
-
-  trough {
-    margin: 2px 0;
   }
 }
 
 /* dnd */
 
 .widget-dnd {
-  margin-top: 5px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-
   switch {
-    font-size: initial;
-    border-radius: 8px;
-    background: #{{ surface0.hex }};
+    background: {{ surface0.hex }};
     box-shadow: none;
 
     &:checked {
-      background: #{{ blue.hex }};
+      background: {{ blue.hex }};
     }
 
     slider {
-      background: #{{ surface1.hex }};
-      border-radius: 8px;
+      background: {{ surface1.hex }};
     }
   }
 }
@@ -273,13 +212,12 @@ scrollbar {
 /* mpris */
 
 .widget-mpris-player {
-  background: #{{ surface0.hex }};
-  border-radius: 12.6px;
-  color: #cdd6f4;
+  background: {{ surface0.hex }};
+  color: {{ text.hex }};
 }
 
 .mpris-overlay {
-  background-color: #{{ surface0.hex }};
+  background-color: {{ surface0.hex }};
   opacity: 0.9;
   padding: 15px 10px;
 }
@@ -292,17 +230,17 @@ scrollbar {
 
 .widget-mpris-title {
   font-size: 1.2rem;
-  color: #{{ text.hex }};
+  color: {{ text.hex }};
 }
 
 .widget-mpris-subtitle {
   font-size: 1rem;
-  color: #{{ subtext1.hex }};
+  color: {{ subtext1.hex }};
 }
 
 .widget-mpris button {
   border-radius: 12.6px;
-  color: #{{ text.hex }};
+  color: {{ text.hex }};
   margin: 0 5px;
   padding: 2px;
 
@@ -311,11 +249,11 @@ scrollbar {
   }
 
   &:hover {
-    background-color: #{{ surface0.hex }};
+    background-color: {{ surface0.hex }};
   }
 
   &:active {
-    background-color: #{{ surface1.hex }};
+    background-color: {{ surface1.hex }};
   }
 
   &:disabled {
@@ -331,7 +269,7 @@ scrollbar {
     }
 
     & > :last-child {
-      color: #{{ red.hex }};
+      color: {{ red.hex }};
     }
   }
 }
@@ -339,11 +277,11 @@ scrollbar {
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
-  background: #{{ surface0.hex }};
+  background: {{ surface0.hex }};
 }
 
 .control-center .widget-label > label {
-  color: #{{ text.hex }};
+  color: {{ text.hex }};
   font-size: 2rem;
 }
 
@@ -357,23 +295,23 @@ scrollbar {
 .widget-volume {
   padding: 1rem 0;
   label {
-    color: #{{ sapphire.hex }};
+    color: {{ sapphire.hex }};
     padding: 0 1rem;
   }
 
   trough highlight {
-    background: #{{ sapphire.hex }};
+    background: {{ sapphire.hex }};
   }
 }
 
 .widget-backlight {
   trough highlight {
-    background: #{{ yellow.hex }};
+    background: {{ yellow.hex }};
   }
 
   label {
     font-size: 1.5rem;
-    color: #{{ yellow.hex }};
+    color: {{ yellow.hex }};
   }
 
   .KB {

@@ -1,19 +1,19 @@
 :root {
-  --cc-bg: #303446;
+  --cc-bg: 303446;
 
-  --noti-border-color: #babbf1;
-  --noti-bg: #51576d;
+  --noti-border-color: babbf1;
+  --noti-bg: 51576d;
   --noti-bg-alpha: 0.9;
-  --noti-bg-darker: #414559;
-  --noti-bg-hover: #626880;
-  --noti-bg-focus: #949cbb4d;
-  --noti-close-bg: #e78284;
-  --noti-close-bg-hover: #ea999c;
+  --noti-bg-darker: 414559;
+  --noti-bg-hover: 626880;
+  --noti-bg-focus: 949cbb4d;
+  --noti-close-bg: e78284;
+  --noti-close-bg-hover: ea999c;
 
-  --text-color: #c6d0f5;
-  --text-color-disabled: #a5adce;
+  --text-color: c6d0f5;
+  --text-color-disabled: a5adce;
 
-  --bg-selected: #f2d5cf4d;
+  --bg-selected: f2d5cf4d;
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -23,9 +23,9 @@
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0   0   1px #4145594d,
-    0 1px 3px 1px #414559b3,
-    0 2px 6px 2px #4145594d;
+    0 0   0   1px 4145594d,
+    0 1px 3px 1px 414559b3,
+    0 2px 6px 2px 4145594d;
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
@@ -42,6 +42,7 @@
           .app-icon {
             -gtk-icon-shadow: var(--notification-shadow);
           }
+
           .body-image {
             background-color: var(--cc-bg);
           }
@@ -52,143 +53,98 @@
 }
 
 trough highlight {
-  background: #c6d0f5;
-}
-
-scale {
-  margin: 0 7px;
-}
-
-scale trough {
-  margin: 0rem 1rem;
-  min-height: 8px;
-  min-width: 70px;
-  border-radius: 12.6px;
+  background: c6d0f5;
 }
 
 trough slider {
-  margin: -10px;
-  border-radius: 12.6px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease;
-  background-color: #8caaee;
+  box-shadow: 0 0 2px 3034464d;
+  background-color: 8caaee;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8), 0 0 8px #8caaee;
+  box-shadow:
+    0 0 2px 3034464d,
+    0 0 8px 8caaee;
 }
 
 trough {
-  background-color: #414559;
+  background-color: 414559;
 }
 
 /* notifications */
 
 .notification-background {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #51576d;
-  border-radius: 12.6px;
-  margin: 18px;
-  background: #292c3c;
-  color: #c6d0f5;
-  padding: 0;
-
-  .notification {
-    padding: 7px;
-    border-radius: 12.6px;
-
-    & > *:last-child > * {
-      min-height: 3.4em;
-    }
-
-    progress, trough, progressbar {
-      border-radius: 12.6px;
-      padding: 3px 0;
-    }
-  }
+  box-shadow:
+    0 0 8px 0 3034464d,
+    inset 0 0 0 1px 51576d;
+  background: 292c3c;
+  color: c6d0f5;
 
   .notification.critical {
-    box-shadow: inset 0 0 7px 0 #e78284;
+    box-shadow: inset 0 0 7px 0 e78284;
   }
 
   .notification-content {
-    margin: 7px;
-
-    overlay {
-      /* icons */
-      margin: 4px;
-    }
-
     .summary {
-      color: #c6d0f5;
+      color: c6d0f5;
     }
 
     .time {
-      color: #a5adce;
+      color: a5adce;
     }
 
     .body {
-      color: #b5bfe2;
+      color: b5bfe2;
     }
   }
 
   .close-button {
-    margin: 7px;
-    padding: 2px;
-    border-radius: 6.3px;
-    color: #303446;
-    background-color: #e78284;
+    color: 303446;
+    background-color: e78284;
 
     &:hover {
-      background-color: #ea999c;
+      background-color: ea999c;
     }
+
     &:active {
-      background-color: #f4b8e4;
+      background-color: f4b8e4;
     }
   }
 
   .notification-action {
-    border-radius: 7px;
-    color: #c6d0f5;
-    background-color: #414559;
-    box-shadow: inset 0 0 0 1px #51576d;
-    margin: 4px;
-    padding: 8px;
-    font-size: 0.2rem; /* controls the button size not text size*/
+    color: c6d0f5;
+    background-color: 414559;
+    box-shadow: inset 0 0 0 1px 51576d;
+
     &:hover {
-      background-color: #51576d;
+      background-color: 51576d;
     }
+
     &:active {
-      background-color: #626880;
+      background-color: 626880;
     }
 
     .notification.critical progress {
-      background-color: #e78284;
+      background-color: e78284;
     }
 
     .notification.low progress {
-      background-color: #81c8be;
+      background-color: 81c8be;
     }
+
     .notification.normal progress {
-      background-color: #ef9f76;
+      background-color: ef9f76;
     }
   }
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #414559;
-  border-radius: 12.6px;
-  background-color: #303446;
-  color: #c6d0f5;
-  padding: 14px;
+  box-shadow: 0 0 8px 0 3034464d, inset 0 0 0 1px 414559;
+  background-color: 303446;
+  color: c6d0f5;
 
   .notification-background {
-    border-radius: 7px;
-    box-shadow: inset 0 0 0 1px #51576d;
-    margin: 4px 10px;
-
-    .notification {
-      border-radius: 7px;
-    }
+    box-shadow: inset 0 0 0 1px 51576d;
 
     .notification.low {
       opacity: 0.8;
@@ -197,67 +153,50 @@ trough {
 
   .widget-title {
     & > label {
-      color: #c6d0f5;
-      font-size: 1.3em;
+      color: c6d0f5;
     }
 
     button {
-      border-radius: 7px;
-      color: #c6d0f5;
-      background-color: #414559;
-      box-shadow: inset 0 0 0 1px #51576d;
-      padding: 8px;
+      color: c6d0f5;
+      background-color: 414559;
+      box-shadow: inset 0 0 0 1px 51576d;
 
       &:hover {
-        background-color: #51576d;
+        background-color: 51576d;
       }
 
       &:active {
-        background-color: #626880;
+        background-color: 626880;
       }
     }
   }
 
   .notification-group {
-    margin-top: 10px;
-
     &:focus .notification-background {
-      background-color: #414559;
+      background-color: 414559;
     }
   }
 }
 
 scrollbar {
   slider {
-    margin: -3px;
     opacity: 0.8;
-  }
-
-  trough {
-    margin: 2px 0;
   }
 }
 
 /* dnd */
 
 .widget-dnd {
-  margin-top: 5px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-
   switch {
-    font-size: initial;
-    border-radius: 8px;
-    background: #414559;
+    background: 414559;
     box-shadow: none;
 
     &:checked {
-      background: #8caaee;
+      background: 8caaee;
     }
 
     slider {
-      background: #51576d;
-      border-radius: 8px;
+      background: 51576d;
     }
   }
 }
@@ -265,13 +204,12 @@ scrollbar {
 /* mpris */
 
 .widget-mpris-player {
-  background: #414559;
-  border-radius: 12.6px;
-  color: #cdd6f4;
+  background: 414559;
+  color: c6d0f5;
 }
 
 .mpris-overlay {
-  background-color: #414559;
+  background-color: 414559;
   opacity: 0.9;
   padding: 15px 10px;
 }
@@ -284,17 +222,17 @@ scrollbar {
 
 .widget-mpris-title {
   font-size: 1.2rem;
-  color: #c6d0f5;
+  color: c6d0f5;
 }
 
 .widget-mpris-subtitle {
   font-size: 1rem;
-  color: #b5bfe2;
+  color: b5bfe2;
 }
 
 .widget-mpris button {
   border-radius: 12.6px;
-  color: #c6d0f5;
+  color: c6d0f5;
   margin: 0 5px;
   padding: 2px;
 
@@ -303,11 +241,11 @@ scrollbar {
   }
 
   &:hover {
-    background-color: #414559;
+    background-color: 414559;
   }
 
   &:active {
-    background-color: #51576d;
+    background-color: 51576d;
   }
 
   &:disabled {
@@ -323,7 +261,7 @@ scrollbar {
     }
 
     & > :last-child {
-      color: #e78284;
+      color: e78284;
     }
   }
 }
@@ -331,11 +269,11 @@ scrollbar {
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
-  background: #414559;
+  background: 414559;
 }
 
 .control-center .widget-label > label {
-  color: #c6d0f5;
+  color: c6d0f5;
   font-size: 2rem;
 }
 
@@ -349,23 +287,23 @@ scrollbar {
 .widget-volume {
   padding: 1rem 0;
   label {
-    color: #85c1dc;
+    color: 85c1dc;
     padding: 0 1rem;
   }
 
   trough highlight {
-    background: #85c1dc;
+    background: 85c1dc;
   }
 }
 
 .widget-backlight {
   trough highlight {
-    background: #e5c890;
+    background: e5c890;
   }
 
   label {
     font-size: 1.5rem;
-    color: #e5c890;
+    color: e5c890;
   }
 
   .KB {

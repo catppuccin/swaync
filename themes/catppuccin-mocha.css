@@ -1,19 +1,19 @@
 :root {
-  --cc-bg: #1e1e2e;
+  --cc-bg: 1e1e2e;
 
-  --noti-border-color: #b4befe;
-  --noti-bg: #45475a;
+  --noti-border-color: b4befe;
+  --noti-bg: 45475a;
   --noti-bg-alpha: 0.9;
-  --noti-bg-darker: #313244;
-  --noti-bg-hover: #585b70;
-  --noti-bg-focus: #9399b24d;
-  --noti-close-bg: #f38ba8;
-  --noti-close-bg-hover: #eba0ac;
+  --noti-bg-darker: 313244;
+  --noti-bg-hover: 585b70;
+  --noti-bg-focus: 9399b24d;
+  --noti-close-bg: f38ba8;
+  --noti-close-bg-hover: eba0ac;
 
-  --text-color: #cdd6f4;
-  --text-color-disabled: #a6adc8;
+  --text-color: cdd6f4;
+  --text-color-disabled: a6adc8;
 
-  --bg-selected: #f5e0dc4d;
+  --bg-selected: f5e0dc4d;
 
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
@@ -23,9 +23,9 @@
   --border-radius: 10px;
 
   --notification-shadow:
-    0 0   0   1px #3132444d,
-    0 1px 3px 1px #313244b3,
-    0 2px 6px 2px #3132444d;
+    0 0   0   1px 3132444d,
+    0 1px 3px 1px 313244b3,
+    0 2px 6px 2px 3132444d;
   --font-size-body: 14px;
   --font-size-summary: 15px;
 
@@ -42,6 +42,7 @@
           .app-icon {
             -gtk-icon-shadow: var(--notification-shadow);
           }
+
           .body-image {
             background-color: var(--cc-bg);
           }
@@ -52,143 +53,98 @@
 }
 
 trough highlight {
-  background: #cdd6f4;
-}
-
-scale {
-  margin: 0 7px;
-}
-
-scale trough {
-  margin: 0rem 1rem;
-  min-height: 8px;
-  min-width: 70px;
-  border-radius: 12.6px;
+  background: cdd6f4;
 }
 
 trough slider {
-  margin: -10px;
-  border-radius: 12.6px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease;
-  background-color: #89b4fa;
+  box-shadow: 0 0 2px 1e1e2e4d;
+  background-color: 89b4fa;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8), 0 0 8px #89b4fa;
+  box-shadow:
+    0 0 2px 1e1e2e4d,
+    0 0 8px 89b4fa;
 }
 
 trough {
-  background-color: #313244;
+  background-color: 313244;
 }
 
 /* notifications */
 
 .notification-background {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #45475a;
-  border-radius: 12.6px;
-  margin: 18px;
-  background: #181825;
-  color: #cdd6f4;
-  padding: 0;
-
-  .notification {
-    padding: 7px;
-    border-radius: 12.6px;
-
-    & > *:last-child > * {
-      min-height: 3.4em;
-    }
-
-    progress, trough, progressbar {
-      border-radius: 12.6px;
-      padding: 3px 0;
-    }
-  }
+  box-shadow:
+    0 0 8px 0 1e1e2e4d,
+    inset 0 0 0 1px 45475a;
+  background: 181825;
+  color: cdd6f4;
 
   .notification.critical {
-    box-shadow: inset 0 0 7px 0 #f38ba8;
+    box-shadow: inset 0 0 7px 0 f38ba8;
   }
 
   .notification-content {
-    margin: 7px;
-
-    overlay {
-      /* icons */
-      margin: 4px;
-    }
-
     .summary {
-      color: #cdd6f4;
+      color: cdd6f4;
     }
 
     .time {
-      color: #a6adc8;
+      color: a6adc8;
     }
 
     .body {
-      color: #bac2de;
+      color: bac2de;
     }
   }
 
   .close-button {
-    margin: 7px;
-    padding: 2px;
-    border-radius: 6.3px;
-    color: #1e1e2e;
-    background-color: #f38ba8;
+    color: 1e1e2e;
+    background-color: f38ba8;
 
     &:hover {
-      background-color: #eba0ac;
+      background-color: eba0ac;
     }
+
     &:active {
-      background-color: #f5c2e7;
+      background-color: f5c2e7;
     }
   }
 
   .notification-action {
-    border-radius: 7px;
-    color: #cdd6f4;
-    background-color: #313244;
-    box-shadow: inset 0 0 0 1px #45475a;
-    margin: 4px;
-    padding: 8px;
-    font-size: 0.2rem; /* controls the button size not text size*/
+    color: cdd6f4;
+    background-color: 313244;
+    box-shadow: inset 0 0 0 1px 45475a;
+
     &:hover {
-      background-color: #45475a;
+      background-color: 45475a;
     }
+
     &:active {
-      background-color: #585b70;
+      background-color: 585b70;
     }
 
     .notification.critical progress {
-      background-color: #f38ba8;
+      background-color: f38ba8;
     }
 
     .notification.low progress {
-      background-color: #94e2d5;
+      background-color: 94e2d5;
     }
+
     .notification.normal progress {
-      background-color: #fab387;
+      background-color: fab387;
     }
   }
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
-  border-radius: 12.6px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-  padding: 14px;
+  box-shadow: 0 0 8px 0 1e1e2e4d, inset 0 0 0 1px 313244;
+  background-color: 1e1e2e;
+  color: cdd6f4;
 
   .notification-background {
-    border-radius: 7px;
-    box-shadow: inset 0 0 0 1px #45475a;
-    margin: 4px 10px;
-
-    .notification {
-      border-radius: 7px;
-    }
+    box-shadow: inset 0 0 0 1px 45475a;
 
     .notification.low {
       opacity: 0.8;
@@ -197,67 +153,50 @@ trough {
 
   .widget-title {
     & > label {
-      color: #cdd6f4;
-      font-size: 1.3em;
+      color: cdd6f4;
     }
 
     button {
-      border-radius: 7px;
-      color: #cdd6f4;
-      background-color: #313244;
-      box-shadow: inset 0 0 0 1px #45475a;
-      padding: 8px;
+      color: cdd6f4;
+      background-color: 313244;
+      box-shadow: inset 0 0 0 1px 45475a;
 
       &:hover {
-        background-color: #45475a;
+        background-color: 45475a;
       }
 
       &:active {
-        background-color: #585b70;
+        background-color: 585b70;
       }
     }
   }
 
   .notification-group {
-    margin-top: 10px;
-
     &:focus .notification-background {
-      background-color: #313244;
+      background-color: 313244;
     }
   }
 }
 
 scrollbar {
   slider {
-    margin: -3px;
     opacity: 0.8;
-  }
-
-  trough {
-    margin: 2px 0;
   }
 }
 
 /* dnd */
 
 .widget-dnd {
-  margin-top: 5px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-
   switch {
-    font-size: initial;
-    border-radius: 8px;
-    background: #313244;
+    background: 313244;
     box-shadow: none;
 
     &:checked {
-      background: #89b4fa;
+      background: 89b4fa;
     }
 
     slider {
-      background: #45475a;
-      border-radius: 8px;
+      background: 45475a;
     }
   }
 }
@@ -265,13 +204,12 @@ scrollbar {
 /* mpris */
 
 .widget-mpris-player {
-  background: #313244;
-  border-radius: 12.6px;
-  color: #cdd6f4;
+  background: 313244;
+  color: cdd6f4;
 }
 
 .mpris-overlay {
-  background-color: #313244;
+  background-color: 313244;
   opacity: 0.9;
   padding: 15px 10px;
 }
@@ -284,17 +222,17 @@ scrollbar {
 
 .widget-mpris-title {
   font-size: 1.2rem;
-  color: #cdd6f4;
+  color: cdd6f4;
 }
 
 .widget-mpris-subtitle {
   font-size: 1rem;
-  color: #bac2de;
+  color: bac2de;
 }
 
 .widget-mpris button {
   border-radius: 12.6px;
-  color: #cdd6f4;
+  color: cdd6f4;
   margin: 0 5px;
   padding: 2px;
 
@@ -303,11 +241,11 @@ scrollbar {
   }
 
   &:hover {
-    background-color: #313244;
+    background-color: 313244;
   }
 
   &:active {
-    background-color: #45475a;
+    background-color: 45475a;
   }
 
   &:disabled {
@@ -323,7 +261,7 @@ scrollbar {
     }
 
     & > :last-child {
-      color: #f38ba8;
+      color: f38ba8;
     }
   }
 }
@@ -331,11 +269,11 @@ scrollbar {
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
-  background: #313244;
+  background: 313244;
 }
 
 .control-center .widget-label > label {
-  color: #cdd6f4;
+  color: cdd6f4;
   font-size: 2rem;
 }
 
@@ -349,23 +287,23 @@ scrollbar {
 .widget-volume {
   padding: 1rem 0;
   label {
-    color: #74c7ec;
+    color: 74c7ec;
     padding: 0 1rem;
   }
 
   trough highlight {
-    background: #74c7ec;
+    background: 74c7ec;
   }
 }
 
 .widget-backlight {
   trough highlight {
-    background: #f9e2af;
+    background: f9e2af;
   }
 
   label {
     font-size: 1.5rem;
-    color: #f9e2af;
+    color: f9e2af;
   }
 
   .KB {
