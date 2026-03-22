@@ -1,0 +1,275 @@
+:root {
+  --cc-bg: #1e1e2e;
+
+  --noti-border-color: #b4befe;
+  --noti-bg: #45475a;
+  --noti-bg-alpha: 0.9;
+  --noti-bg-darker: #313244;
+  --noti-bg-hover: #585b70;
+  --noti-bg-focus: #9399b2;
+  --noti-close-bg: #f38ba8;
+  --noti-close-bg-hover: #eba0ac;
+
+  --text-color: #cdd6f4;
+  --text-color-disabled: #a6adc8;
+
+  --bg-selected: #f5e0dc;
+
+  --notification-icon-size: 64px;
+  --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+  --notification-group-icon-size: 32px;
+
+  --border: 2px solid var(--noti-border-color);
+  --border-radius: 10px;
+
+  --notification-shadow:
+    0 0   0   1px #313244,
+    0 1px 3px 1px #313244,
+    0 2px 6px 2px #313244;
+
+  /* Deprecated variables (because of their typos). Keeeping them around for backwards compatibility. */
+  --hover-transition: background 0.15s ease-in-out;
+  --group-collapse-transition: opacity 400ms ease-in-out;
+}
+
+.notification-row {
+  .notification-background {
+    .notification {
+      .notification-default-action {
+        .notification-content {
+          .app-icon {
+            -gtk-icon-shadow: var(--notification-shadow);
+          }
+
+          .body-image {
+            background-color: var(--cc-bg);
+          }
+        }
+      }
+    }
+  }
+}
+
+trough highlight {
+  background: #cdd6f4;
+}
+
+trough slider {
+  box-shadow: 0 0 2px #1e1e2e;
+  background-color: #89b4fa;
+}
+
+trough slider:hover {
+  box-shadow:
+    0 0 2px #1e1e2e,
+    0 0 8px #89b4fa;
+}
+
+trough {
+  background-color: #313244;
+}
+
+/* notifications */
+
+.notification-background {
+  box-shadow:
+    0 0 8px 0 #1e1e2e,
+    inset 0 0 0 1px #45475a;
+  background: #181825;
+  color: #cdd6f4;
+
+  .notification.critical {
+    box-shadow: inset 0 0 7px 0 #f38ba8;
+  }
+
+  .notification-content {
+    .summary {
+      color: #cdd6f4;
+    }
+
+    .time {
+      color: #a6adc8;
+    }
+
+    .body {
+      color: #bac2de;
+    }
+  }
+
+  .close-button {
+    color: #1e1e2e;
+    background-color: #f38ba8;
+
+    &:hover {
+      background-color: #eba0ac;
+    }
+
+    &:active {
+      background-color: #f5c2e7;
+    }
+  }
+
+  .notification-action {
+    color: #cdd6f4;
+    background-color: #313244;
+    box-shadow: inset 0 0 0 1px #45475a;
+
+    &:hover {
+      background-color: #45475a;
+    }
+
+    &:active {
+      background-color: #585b70;
+    }
+
+    .notification.critical progress {
+      background-color: #f38ba8;
+    }
+
+    .notification.low progress {
+      background-color: #94e2d5;
+    }
+
+    .notification.normal progress {
+      background-color: #fab387;
+    }
+  }
+}
+
+.control-center {
+  box-shadow: 0 0 8px 0 #1e1e2e, inset 0 0 0 1px #313244;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+
+  .notification-background {
+    box-shadow: inset 0 0 0 1px #45475a;
+
+    .notification.low {
+      opacity: 0.8;
+    }
+  }
+
+  .widget-title {
+    & > label {
+      color: #cdd6f4;
+    }
+
+    button {
+      color: #cdd6f4;
+      background-color: #313244;
+      box-shadow: inset 0 0 0 1px #45475a;
+
+      &:hover {
+        background-color: #45475a;
+      }
+
+      &:active {
+        background-color: #585b70;
+      }
+    }
+  }
+
+  .notification-group {
+    &:focus .notification-background {
+      background-color: #313244;
+    }
+  }
+}
+
+scrollbar {
+  slider {
+    opacity: 0.8;
+  }
+}
+
+/* dnd */
+
+.widget-dnd {
+  switch {
+    background: #313244;
+    box-shadow: none;
+
+    &:checked {
+      background: #89b4fa;
+    }
+
+    slider {
+      background: #45475a;
+    }
+  }
+}
+
+/* mpris */
+
+.widget-mpris-player {
+  background: #313244;
+  color: #cdd6f4;
+}
+
+.mpris-overlay {
+  background-color: #313244;
+  opacity: 0.9;
+}
+
+.widget-mpris-title {
+  color: #cdd6f4;
+}
+
+.widget-mpris-subtitle {
+  color: #bac2de;
+}
+
+.widget-mpris button {
+  color: #cdd6f4;
+
+  &:hover {
+    background-color: #313244;
+  }
+
+  &:active {
+    background-color: #45475a;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.widget-menubar {
+  & > .menu-button-bar {
+    & > :last-child {
+      color: #f38ba8;
+    }
+  }
+}
+
+.power-buttons button:hover,
+.powermode-buttons button:hover,
+.screenshot-buttons button:hover {
+  background: #313244;
+}
+
+.control-center .widget-label > label {
+  color: #cdd6f4;
+}
+
+.widget-volume {
+  padding: 1rem 0;
+  label {
+    color: #74c7ec;
+  }
+
+  trough highlight {
+    background: #74c7ec;
+  }
+}
+
+.widget-backlight {
+  trough highlight {
+    background: #f9e2af;
+  }
+
+  label {
+    color: #f9e2af;
+  }
+}
