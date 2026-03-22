@@ -9,9 +9,8 @@ build-all: build-scss build-css
 build-scss:
   whiskers swaync.tera
 
-[working-directory: 'themes/']
 build-css:
-  sass catppuccin-latte.scss catppuccin-latte.css
-  sass catppuccin-frappe.scss catppuccin-frappe.css
-  sass catppuccin-macchiato.scss catppuccin-macchiato.css
-  sass catppuccin-mocha.scss catppuccin-mocha.css
+  sass templates/catppuccin-latte.scss      themes/catppuccin-latte.css
+  sass templates/catppuccin-frappe.scss     themes/catppuccin-frappe.css
+  sass templates/catppuccin-macchiato.scss  themes/catppuccin-macchiato.css
+  sass templates/catppuccin-mocha.scss      themes/catppuccin-mocha.css
