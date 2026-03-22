@@ -14,3 +14,4 @@ build-css:
   sass templates/catppuccin-frappe.scss     themes/catppuccin-frappe.css
   sass templates/catppuccin-macchiato.scss  themes/catppuccin-macchiato.css
   sass templates/catppuccin-mocha.scss      themes/catppuccin-mocha.css
+  sass templates/style.scss                 templates/style.css

@@ -1,0 +1,172 @@
+@import url("./catppuccin-<flavor>.css");
+:root {
+  --font-size-body: 14px;
+  --font-size-summary: 15px;
+}
+
+* {
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+scale {
+  margin: 0 7px;
+}
+
+scale trough {
+  margin: 0rem 1rem;
+  min-height: 8px;
+  min-width: 70px;
+  border-radius: 12.6px;
+}
+
+trough slider {
+  margin: -10px;
+  border-radius: 12.6px;
+  transition: all 0.2s ease;
+}
+
+.notification-background {
+  border-radius: 12.6px;
+  margin: 18px;
+  padding: 0;
+}
+.notification-background .notification {
+  padding: 7px;
+  border-radius: 12.6px;
+}
+.notification-background .notification > *:last-child > * {
+  min-height: 3.4em;
+}
+.notification-background .notification progress, .notification-background .notification trough, .notification-background .notification progressbar {
+  border-radius: 12.6px;
+  padding: 3px 0;
+}
+.notification-background .notification-content {
+  margin: 7px;
+}
+.notification-background .notification-content overlay {
+  /* icons */
+  margin: 4px;
+}
+.notification-background .close-button {
+  margin: 7px;
+  padding: 2px;
+  border-radius: 6.3px;
+}
+.notification-background .notification-action {
+  border-radius: 7px;
+  margin: 4px;
+  padding: 8px;
+  font-size: 0.2rem; /* controls the button size not text size*/
+}
+
+.control-center {
+  border-radius: 12.6px;
+  padding: 14px;
+}
+.control-center .notification-background {
+  border-radius: 7px;
+  margin: 4px 10px;
+}
+.control-center .notification-background .notification {
+  border-radius: 7px;
+}
+.control-center .widget-title > label {
+  font-size: 1.3em;
+}
+.control-center .widget-title button {
+  border-radius: 7px;
+  padding: 8px;
+}
+.control-center .widget-title .notification-group {
+  margin-top: 10px;
+}
+
+scrollbar slider {
+  margin: -3px;
+}
+scrollbar trough {
+  margin: 2px 0;
+}
+
+.widget-dnd {
+  margin-top: 5px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+.widget-dnd switch {
+  font-size: initial;
+  border-radius: 8px;
+}
+.widget-dnd switch slider {
+  border-radius: 8px;
+}
+
+/* mpris */
+.widget-mpris-player {
+  border-radius: 12.6px;
+}
+
+.mpris-overlay {
+  padding: 15px 10px;
+}
+
+.widget-mpris-album-art {
+  -gtk-icon-size: 100px;
+  border-radius: 12.6px;
+  margin: 0 10px;
+}
+
+.widget-mpris-title {
+  font-size: 1.2rem;
+}
+
+.widget-mpris-subtitle {
+  font-size: 1rem;
+}
+
+.widget-mpris button {
+  border-radius: 12.6px;
+  margin: 0 5px;
+  padding: 2px;
+}
+.widget-mpris button image {
+  -gtk-icon-size: 1.8rem;
+}
+
+.widget-menubar > .menu-button-bar > button > label {
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.control-center .widget-label > label {
+  font-size: 2rem;
+}
+
+.widget-buttons-grid {
+  padding-top: 1rem;
+}
+.widget-buttons-grid flowboxchild > button label {
+  font-size: 2.5rem;
+}
+
+.widget-volume {
+  padding: 1rem 0;
+}
+.widget-volume label {
+  padding: 0 1rem;
+}
+
+.widget-backlight label {
+  font-size: 1.5rem;
+}
+.widget-backlight .KB {
+  padding-bottom: 1rem;
+}
+
+.image {
+  padding-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
