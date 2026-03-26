@@ -1,26 +1,29 @@
 :root {
-  --cc-bg: #24273a;
-  --noti-border-color: #b7bdf8;
-  --noti-bg: #494d64;
+  --cc-bg: #24273aff;
+  --noti-border-color: #b7bdf8ff;
+  --noti-bg: #494d64ff;
   --noti-bg-alpha: 0.9;
-  --noti-bg-darker: #363a4f;
-  --noti-bg-hover: #5b6078;
-  --noti-bg-focus: #939ab7;
-  --noti-close-bg: #ed8796;
-  --noti-close-bg-hover: #ee99a0;
-  --text-color: #cad3f5;
-  --text-color-disabled: #a5adcb;
-  --bg-selected: #f4dbd6;
+  --noti-bg-darker: #363a4fff;
+  --noti-bg-hover: #5b6078ff;
+  --noti-bg-focus: #939ab74d;
+  --noti-close-bg: #ed8796ff;
+  --noti-close-bg-hover: #ee99a0ff;
+  --text-color: #cad3f5ff;
+  --text-color-disabled: #a5adcbff;
+  --bg-selected: #f4dbd64d;
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
   --notification-group-icon-size: 32px;
   --border: 2px solid var(--noti-border-color);
   --border-radius: 10px;
   --notification-shadow:
-    0 0 0 1px #363a4f,
-    0 1px 3px 1px #363a4f,
-    0 2px 6px 2px #363a4f;
-  /* Deprecated variables (because of their typos). Keeeping them around for backwards compatibility. */
+    0 0 0 1px #363a4f4d,
+    0 1px 3px 1px #363a4fb3,
+    0 2px 6px 2px #363a4f4d;
+  /*
+   * Deprecated variables (because of their typos).
+   * Keeping them around for backwards compatibility.
+   */
   --hover-transition: background 0.15s ease-in-out;
   --group-collapse-transition: opacity 400ms ease-in-out;
 }
@@ -37,12 +40,12 @@ trough highlight {
 }
 
 trough slider {
-  box-shadow: 0 0 2px #24273a;
+  box-shadow: 0 0 2px rgba(36, 39, 58, 0.3019607843);
   background-color: #8aadf4;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px #24273a, 0 0 8px #8aadf4;
+  box-shadow: 0 0 2px rgba(36, 39, 58, 0.3019607843), 0 0 8px rgba(138, 173, 244, 0.3019607843);
 }
 
 trough {
@@ -51,12 +54,12 @@ trough {
 
 /* notifications */
 .notification-background {
-  box-shadow: 0 0 8px 0 #24273a, inset 0 0 0 1px #494d64;
+  box-shadow: 0 0 8px 0 rgba(36, 39, 58, 0.3019607843), inset 0 0 0 1px rgba(73, 77, 100, 0.3019607843);
   background: #1e2030;
   color: #cad3f5;
 }
 .notification-background .notification.critical {
-  box-shadow: inset 0 0 7px 0 #ed8796;
+  box-shadow: inset 0 0 7px 0 rgba(237, 135, 150, 0.3019607843);
 }
 .notification-background .notification-content .summary {
   color: #cad3f5;
@@ -80,7 +83,7 @@ trough {
 .notification-background .notification-action {
   color: #cad3f5;
   background-color: #363a4f;
-  box-shadow: inset 0 0 0 1px #494d64;
+  box-shadow: inset 0 0 0 1px rgba(73, 77, 100, 0.3019607843);
 }
 .notification-background .notification-action:hover {
   background-color: #494d64;
@@ -99,12 +102,12 @@ trough {
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 #24273a, inset 0 0 0 1px #363a4f;
+  box-shadow: 0 0 8px 0 rgba(36, 39, 58, 0.3019607843), inset 0 0 0 1px rgba(54, 58, 79, 0.3019607843);
   background-color: #24273a;
   color: #cad3f5;
 }
 .control-center .notification-background {
-  box-shadow: inset 0 0 0 1px #494d64;
+  box-shadow: inset 0 0 0 1px rgba(73, 77, 100, 0.3019607843);
 }
 .control-center .notification-background .notification.low {
   opacity: 0.8;
@@ -115,7 +118,7 @@ trough {
 .control-center .widget-title button {
   color: #cad3f5;
   background-color: #363a4f;
-  box-shadow: inset 0 0 0 1px #494d64;
+  box-shadow: inset 0 0 0 1px rgba(73, 77, 100, 0.3019607843);
 }
 .control-center .widget-title button:hover {
   background-color: #494d64;

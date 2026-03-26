@@ -4,7 +4,7 @@ whiskers:
   matrix:
     - flavor
   filename: "templates/catppuccin-{{ flavor.identifier }}.scss"
-  hex_format: "#{{r}}{{g}}{{b}}"
+  hex_format: "#{{r}}{{g}}{{b}}{{a}}"
 ---
 :root {
   --cc-bg: {{ base.hex }};
@@ -35,7 +35,10 @@ whiskers:
     0 1px 3px 1px {{ surface0 | mod(opacity=0.7) | hex }},
     0 2px 6px 2px {{ surface0 | mod(opacity=0.3) | hex }};
 
-  /* Deprecated variables (because of their typos). Keeeping them around for backwards compatibility. */
+  /*
+   * Deprecated variables (because of their typos).
+   * Keeping them around for backwards compatibility.
+   */
   --hover-transition: background 0.15s ease-in-out;
   --group-collapse-transition: opacity 400ms ease-in-out;
 }
