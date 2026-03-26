@@ -1,0 +1,278 @@
+:root {
+  --cc-bg: #eff1f5ff;
+
+  --noti-border-color: #7287fdff;
+  --noti-bg: #bcc0ccff;
+  --noti-bg-alpha: 0.9;
+  --noti-bg-darker: #ccd0daff;
+  --noti-bg-hover: #acb0beff;
+  --noti-bg-focus: #7c7f934d;
+  --noti-close-bg: #d20f39ff;
+  --noti-close-bg-hover: #e64553ff;
+
+  --text-color: #4c4f69ff;
+  --text-color-disabled: #6c6f85ff;
+
+  --bg-selected: #dc8a784d;
+
+  --notification-icon-size: 64px;
+  --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+  --notification-group-icon-size: 32px;
+
+  --border: 2px solid var(--noti-border-color);
+  --border-radius: 10px;
+
+  --notification-shadow:
+    0 0   0   1px #ccd0da4d,
+    0 1px 3px 1px #ccd0dab3,
+    0 2px 6px 2px #ccd0da4d;
+
+  /*
+   * Deprecated variables (because of their typos).
+   * Keeping them around for backwards compatibility.
+   */
+  --hover-transition: background 0.15s ease-in-out;
+  --group-collapse-transition: opacity 400ms ease-in-out;
+}
+
+.notification-row {
+  .notification-background {
+    .notification {
+      .notification-default-action {
+        .notification-content {
+          .app-icon {
+            -gtk-icon-shadow: var(--notification-shadow);
+          }
+
+          .body-image {
+            background-color: var(--cc-bg);
+          }
+        }
+      }
+    }
+  }
+}
+
+trough highlight {
+  background: #4c4f69ff;
+}
+
+trough slider {
+  box-shadow: 0 0 2px #eff1f54d;
+  background-color: #179299ff;
+}
+
+trough slider:hover {
+  box-shadow:
+    0 0 2px #eff1f54d,
+    0 0 8px #1792994d;
+}
+
+trough {
+  background-color: #ccd0daff;
+}
+
+/* notifications */
+
+.notification-background {
+  box-shadow:
+    0 0 8px 0 #eff1f54d,
+    inset 0 0 0 1px #bcc0cc4d;
+  background: #e6e9efff;
+  color: #4c4f69ff;
+
+  .notification.critical {
+    box-shadow: inset 0 0 7px 0 #d20f394d;
+  }
+
+  .notification-content {
+    .summary {
+      color: #4c4f69ff;
+    }
+
+    .time {
+      color: #6c6f85ff;
+    }
+
+    .body {
+      color: #5c5f77ff;
+    }
+  }
+
+  .close-button {
+    color: #eff1f5ff;
+    background-color: #d20f39ff;
+
+    &:hover {
+      background-color: #e64553ff;
+    }
+
+    &:active {
+      background-color: #ea76cbff;
+    }
+  }
+
+  .notification-action {
+    color: #4c4f69ff;
+    background-color: #ccd0daff;
+    box-shadow: inset 0 0 0 1px #bcc0cc4d;
+
+    &:hover {
+      background-color: #bcc0ccff;
+    }
+
+    &:active {
+      background-color: #acb0beff;
+    }
+
+    .notification.critical progress {
+      background-color: #d20f39ff;
+    }
+
+    .notification.low progress {
+      background-color: #179299ff;
+    }
+
+    .notification.normal progress {
+      background-color: #fe640bff;
+    }
+  }
+}
+
+.control-center {
+  box-shadow: 0 0 8px 0 #eff1f54d, inset 0 0 0 1px #ccd0da4d;
+  background-color: #eff1f5ff;
+  color: #4c4f69ff;
+
+  .notification-background {
+    box-shadow: inset 0 0 0 1px #bcc0cc4d;
+
+    .notification.low {
+      opacity: 0.8;
+    }
+  }
+
+  .widget-title {
+    & > label {
+      color: #4c4f69ff;
+    }
+
+    button {
+      color: #4c4f69ff;
+      background-color: #ccd0daff;
+      box-shadow: inset 0 0 0 1px #bcc0cc4d;
+
+      &:hover {
+        background-color: #bcc0ccff;
+      }
+
+      &:active {
+        background-color: #acb0beff;
+      }
+    }
+  }
+
+  .notification-group {
+    &:focus .notification-background {
+      background-color: #ccd0daff;
+    }
+  }
+}
+
+scrollbar {
+  slider {
+    opacity: 0.8;
+  }
+}
+
+/* dnd */
+
+.widget-dnd {
+  switch {
+    background: #ccd0daff;
+    box-shadow: none;
+
+    &:checked {
+      background: #179299ff;
+    }
+
+    slider {
+      background: #bcc0ccff;
+    }
+  }
+}
+
+/* mpris */
+
+.widget-mpris-player {
+  background: #ccd0daff;
+  color: #4c4f69ff;
+}
+
+.mpris-overlay {
+  background-color: #ccd0daff;
+  opacity: 0.9;
+}
+
+.widget-mpris-title {
+  color: #4c4f69ff;
+}
+
+.widget-mpris-subtitle {
+  color: #5c5f77ff;
+}
+
+.widget-mpris button {
+  color: #4c4f69ff;
+
+  &:hover {
+    background-color: #ccd0daff;
+  }
+
+  &:active {
+    background-color: #bcc0ccff;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.widget-menubar {
+  & > .menu-button-bar {
+    & > :last-child {
+      color: #d20f39ff;
+    }
+  }
+}
+
+.power-buttons button:hover,
+.powermode-buttons button:hover,
+.screenshot-buttons button:hover {
+  background: #ccd0daff;
+}
+
+.control-center .widget-label > label {
+  color: #4c4f69ff;
+}
+
+.widget-volume {
+  padding: 1rem 0;
+  label {
+    color: #209fb5ff;
+  }
+
+  trough highlight {
+    background: #209fb5ff;
+  }
+}
+
+.widget-backlight {
+  trough highlight {
+    background: #df8e1dff;
+  }
+
+  label {
+    color: #df8e1dff;
+  }
+}

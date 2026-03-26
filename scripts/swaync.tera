@@ -3,7 +3,8 @@ whiskers:
   version: "^2.5.1"
   matrix:
     - flavor
-  filename: "templates/catppuccin-{{ flavor.identifier }}.scss"
+    - accent
+  filename: "templates/catppuccin-{{ flavor.identifier }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.scss"
   hex_format: "#{{r}}{{g}}{{b}}{{a}}"
 ---
 :root {
@@ -67,13 +68,13 @@ trough highlight {
 
 trough slider {
   box-shadow: 0 0 2px {{ base | mod(opacity=0.3) | hex }};
-  background-color: {{ blue.hex }};
+  background-color: {{ flavor.colors[accent].hex }};
 }
 
 trough slider:hover {
   box-shadow:
     0 0 2px {{ base | mod(opacity=0.3) | hex }},
-    0 0 8px {{ blue | mod(opacity=0.3) | hex }};
+    0 0 8px {{ flavor.colors[accent] | mod(opacity=0.3) | hex }};
 }
 
 trough {
@@ -201,7 +202,7 @@ scrollbar {
     box-shadow: none;
 
     &:checked {
-      background: {{ blue.hex }};
+      background: {{ flavor.colors[accent].hex }};
     }
 
     slider {

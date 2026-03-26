@@ -1,25 +1,25 @@
 :root {
-  --cc-bg: #eff1f5ff;
-  --noti-border-color: #7287fdff;
-  --noti-bg: #bcc0ccff;
+  --cc-bg: #1e1e2eff;
+  --noti-border-color: #b4befeff;
+  --noti-bg: #45475aff;
   --noti-bg-alpha: 0.9;
-  --noti-bg-darker: #ccd0daff;
-  --noti-bg-hover: #acb0beff;
-  --noti-bg-focus: #7c7f934d;
-  --noti-close-bg: #d20f39ff;
-  --noti-close-bg-hover: #e64553ff;
-  --text-color: #4c4f69ff;
-  --text-color-disabled: #6c6f85ff;
-  --bg-selected: #dc8a784d;
+  --noti-bg-darker: #313244ff;
+  --noti-bg-hover: #585b70ff;
+  --noti-bg-focus: #9399b24d;
+  --noti-close-bg: #f38ba8ff;
+  --noti-close-bg-hover: #eba0acff;
+  --text-color: #cdd6f4ff;
+  --text-color-disabled: #a6adc8ff;
+  --bg-selected: #f5e0dc4d;
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
   --notification-group-icon-size: 32px;
   --border: 2px solid var(--noti-border-color);
   --border-radius: 10px;
   --notification-shadow:
-    0 0 0 1px #ccd0da4d,
-    0 1px 3px 1px #ccd0dab3,
-    0 2px 6px 2px #ccd0da4d;
+    0 0 0 1px #3132444d,
+    0 1px 3px 1px #313244b3,
+    0 2px 6px 2px #3132444d;
   /*
    * Deprecated variables (because of their typos).
    * Keeping them around for backwards compatibility.
@@ -36,98 +36,98 @@
 }
 
 trough highlight {
-  background: #4c4f69;
+  background: #cdd6f4;
 }
 
 trough slider {
-  box-shadow: 0 0 2px rgba(239, 241, 245, 0.3019607843);
-  background-color: #1e66f5;
+  box-shadow: 0 0 2px rgba(30, 30, 46, 0.3019607843);
+  background-color: #fab387;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(239, 241, 245, 0.3019607843), 0 0 8px rgba(30, 102, 245, 0.3019607843);
+  box-shadow: 0 0 2px rgba(30, 30, 46, 0.3019607843), 0 0 8px rgba(250, 179, 135, 0.3019607843);
 }
 
 trough {
-  background-color: #ccd0da;
+  background-color: #313244;
 }
 
 /* notifications */
 .notification-background {
-  box-shadow: 0 0 8px 0 rgba(239, 241, 245, 0.3019607843), inset 0 0 0 1px rgba(188, 192, 204, 0.3019607843);
-  background: #e6e9ef;
-  color: #4c4f69;
+  box-shadow: 0 0 8px 0 rgba(30, 30, 46, 0.3019607843), inset 0 0 0 1px rgba(69, 71, 90, 0.3019607843);
+  background: #181825;
+  color: #cdd6f4;
 }
 .notification-background .notification.critical {
-  box-shadow: inset 0 0 7px 0 rgba(210, 15, 57, 0.3019607843);
+  box-shadow: inset 0 0 7px 0 rgba(243, 139, 168, 0.3019607843);
 }
 .notification-background .notification-content .summary {
-  color: #4c4f69;
+  color: #cdd6f4;
 }
 .notification-background .notification-content .time {
-  color: #6c6f85;
+  color: #a6adc8;
 }
 .notification-background .notification-content .body {
-  color: #5c5f77;
+  color: #bac2de;
 }
 .notification-background .close-button {
-  color: #eff1f5;
-  background-color: #d20f39;
+  color: #1e1e2e;
+  background-color: #f38ba8;
 }
 .notification-background .close-button:hover {
-  background-color: #e64553;
+  background-color: #eba0ac;
 }
 .notification-background .close-button:active {
-  background-color: #ea76cb;
+  background-color: #f5c2e7;
 }
 .notification-background .notification-action {
-  color: #4c4f69;
-  background-color: #ccd0da;
-  box-shadow: inset 0 0 0 1px rgba(188, 192, 204, 0.3019607843);
+  color: #cdd6f4;
+  background-color: #313244;
+  box-shadow: inset 0 0 0 1px rgba(69, 71, 90, 0.3019607843);
 }
 .notification-background .notification-action:hover {
-  background-color: #bcc0cc;
+  background-color: #45475a;
 }
 .notification-background .notification-action:active {
-  background-color: #acb0be;
+  background-color: #585b70;
 }
 .notification-background .notification-action .notification.critical progress {
-  background-color: #d20f39;
+  background-color: #f38ba8;
 }
 .notification-background .notification-action .notification.low progress {
-  background-color: #179299;
+  background-color: #94e2d5;
 }
 .notification-background .notification-action .notification.normal progress {
-  background-color: #fe640b;
+  background-color: #fab387;
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(239, 241, 245, 0.3019607843), inset 0 0 0 1px rgba(204, 208, 218, 0.3019607843);
-  background-color: #eff1f5;
-  color: #4c4f69;
+  box-shadow: 0 0 8px 0 rgba(30, 30, 46, 0.3019607843), inset 0 0 0 1px rgba(49, 50, 68, 0.3019607843);
+  background-color: #1e1e2e;
+  color: #cdd6f4;
 }
 .control-center .notification-background {
-  box-shadow: inset 0 0 0 1px rgba(188, 192, 204, 0.3019607843);
+  box-shadow: inset 0 0 0 1px rgba(69, 71, 90, 0.3019607843);
 }
 .control-center .notification-background .notification.low {
   opacity: 0.8;
 }
 .control-center .widget-title > label {
-  color: #4c4f69;
+  color: #cdd6f4;
 }
 .control-center .widget-title button {
-  color: #4c4f69;
-  background-color: #ccd0da;
-  box-shadow: inset 0 0 0 1px rgba(188, 192, 204, 0.3019607843);
+  color: #cdd6f4;
+  background-color: #313244;
+  box-shadow: inset 0 0 0 1px rgba(69, 71, 90, 0.3019607843);
 }
 .control-center .widget-title button:hover {
-  background-color: #bcc0cc;
+  background-color: #45475a;
 }
 .control-center .widget-title button:active {
-  background-color: #acb0be;
+  background-color: #585b70;
 }
 .control-center .notification-group:focus .notification-background {
-  background-color: #ccd0da;
+  background-color: #313244;
 }
 
 scrollbar slider {
@@ -136,77 +136,75 @@ scrollbar slider {
 
 /* dnd */
 .widget-dnd switch {
-  background: #ccd0da;
+  background: #313244;
   box-shadow: none;
 }
 .widget-dnd switch:checked {
-  background: #1e66f5;
+  background: #fab387;
 }
 .widget-dnd switch slider {
-  background: #bcc0cc;
+  background: #45475a;
 }
 
 /* mpris */
 .widget-mpris-player {
-  background: #ccd0da;
-  color: #4c4f69;
+  background: #313244;
+  color: #cdd6f4;
 }
 
 .mpris-overlay {
-  background-color: #ccd0da;
+  background-color: #313244;
   opacity: 0.9;
 }
 
 .widget-mpris-title {
-  color: #4c4f69;
+  color: #cdd6f4;
 }
 
 .widget-mpris-subtitle {
-  color: #5c5f77;
+  color: #bac2de;
 }
 
 .widget-mpris button {
-  color: #4c4f69;
+  color: #cdd6f4;
 }
 .widget-mpris button:hover {
-  background-color: #ccd0da;
+  background-color: #313244;
 }
 .widget-mpris button:active {
-  background-color: #bcc0cc;
+  background-color: #45475a;
 }
 .widget-mpris button:disabled {
   opacity: 0.5;
 }
 
 .widget-menubar > .menu-button-bar > :last-child {
-  color: #d20f39;
+  color: #f38ba8;
 }
 
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
-  background: #ccd0da;
+  background: #313244;
 }
 
 .control-center .widget-label > label {
-  color: #4c4f69;
+  color: #cdd6f4;
 }
 
 .widget-volume {
   padding: 1rem 0;
 }
 .widget-volume label {
-  color: #209fb5;
+  color: #74c7ec;
 }
 .widget-volume trough highlight {
-  background: #209fb5;
+  background: #74c7ec;
 }
 
 .widget-backlight trough highlight {
-  background: #df8e1d;
+  background: #f9e2af;
 }
 .widget-backlight label {
-  color: #df8e1d;
+  color: #f9e2af;
 }
-
-/*# sourceMappingURL=catppuccin-latte.css.map */

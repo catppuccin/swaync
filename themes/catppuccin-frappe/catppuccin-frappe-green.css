@@ -41,11 +41,11 @@ trough highlight {
 
 trough slider {
   box-shadow: 0 0 2px rgba(48, 52, 70, 0.3019607843);
-  background-color: #8caaee;
+  background-color: #a6d189;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(48, 52, 70, 0.3019607843), 0 0 8px rgba(140, 170, 238, 0.3019607843);
+  box-shadow: 0 0 2px rgba(48, 52, 70, 0.3019607843), 0 0 8px rgba(166, 209, 137, 0.3019607843);
 }
 
 trough {
@@ -140,7 +140,7 @@ scrollbar slider {
   box-shadow: none;
 }
 .widget-dnd switch:checked {
-  background: #8caaee;
+  background: #a6d189;
 }
 .widget-dnd switch slider {
   background: #51576d;
@@ -208,5 +208,3 @@ scrollbar slider {
 .widget-backlight label {
   color: #e5c890;
 }
-
-/*# sourceMappingURL=catppuccin-frappe.css.map */

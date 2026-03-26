@@ -41,11 +41,11 @@ trough highlight {
 
 trough slider {
   box-shadow: 0 0 2px rgba(36, 39, 58, 0.3019607843);
-  background-color: #8aadf4;
+  background-color: #f5a97f;
 }
 
 trough slider:hover {
-  box-shadow: 0 0 2px rgba(36, 39, 58, 0.3019607843), 0 0 8px rgba(138, 173, 244, 0.3019607843);
+  box-shadow: 0 0 2px rgba(36, 39, 58, 0.3019607843), 0 0 8px rgba(245, 169, 127, 0.3019607843);
 }
 
 trough {
@@ -140,7 +140,7 @@ scrollbar slider {
   box-shadow: none;
 }
 .widget-dnd switch:checked {
-  background: #8aadf4;
+  background: #f5a97f;
 }
 .widget-dnd switch slider {
   background: #494d64;
@@ -208,5 +208,3 @@ scrollbar slider {
 .widget-backlight label {
   color: #eed49f;
 }
-
-/*# sourceMappingURL=catppuccin-macchiato.css.map */
