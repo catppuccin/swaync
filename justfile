@@ -12,4 +12,4 @@ build-scss:
 [parallel]
 build-css:
   scripts/compile.sh
-  sass templates/style.scss style.css
+  sass --no-source-map templates/style.scss style.css
