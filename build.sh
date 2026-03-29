@@ -8,7 +8,7 @@ ACCENTS=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "
 DIST_DIR="dist/themes"
 SRC_DIR="$(pwd)/src"
 NODE_MODULES="$(pwd)/node_modules"
-TMP_DIR="/tmp/catppuccin-themes"
+TMP_DIR="$(pwd)/.temp"
 
 mkdir -p "$DIST_DIR" "$TMP_DIR"
 
