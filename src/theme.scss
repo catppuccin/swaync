@@ -1,0 +1,289 @@
+$flavor: "latte" !default;
+$accent: "blue" !default;
+
+@use "sass:map";
+@use "@catppuccin/palette" as ctp;
+
+$palette: map.get(ctp.$palette, $flavor);
+$accent-color: #{map.get($palette, $accent)};
+
+:root {
+  --cc-bg: #{map.get($palette, "base")};
+
+  --noti-border-color: #{map.get($palette, "lavender")};
+  --noti-bg: #{map.get($palette, "surface1")};
+  --noti-bg-alpha: 0.9;
+  --noti-bg-darker: #{map.get($palette, "surface0")};
+  --noti-bg-hover: #{map.get($palette, "surface2")};
+  --noti-bg-focus: rgba(#{map.get($palette, "overlay2")}, 0.3);
+  --noti-close-bg: #{map.get($palette, "red")};
+  --noti-close-bg-hover: #{map.get($palette, "maroon")};
+
+  --text-color: #{map.get($palette, "text")};
+  --text-color-disabled: #{map.get($palette, "subtext0")};
+
+  --bg-selected: rgba(#{map.get($palette, "rosewater")}, 0.3);
+
+  --notification-icon-size: 64px;
+  --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+  --notification-group-icon-size: 32px;
+
+  --border: 2px solid var(--noti-border-color);
+  --border-radius: 10px;
+
+  --notification-shadow:
+    0 0 0 1px rgba(#{map.get($palette, "surface0")}, 0.3),
+    0 1px 3px 1px rgba(#{map.get($palette, "surface0")}, 0.7),
+    0 2px 6px 2px rgba(#{map.get($palette, "surface0")}, 0.3);
+
+  /*
+   * Deprecated variables (because of their typos).
+   * Keeping them around for backwards compatibility.
+   */
+  --hover-transition: background 0.15s ease-in-out;
+  --group-collapse-transition: opacity 400ms ease-in-out;
+}
+
+.notification-row {
+  .notification-background {
+    .notification {
+      .notification-default-action {
+        .notification-content {
+          .app-icon {
+            -gtk-icon-shadow: var(--notification-shadow);
+          }
+
+          .body-image {
+            background-color: var(--cc-bg);
+          }
+        }
+      }
+    }
+  }
+}
+
+trough highlight {
+  background: #{map.get($palette, "text")};
+}
+
+trough slider {
+  box-shadow: 0 0 2px rgba(#{map.get($palette, "base")}, 0.3);
+  background-color: #{$accent-color};
+}
+
+trough slider:hover {
+  box-shadow:
+    0 0 2px rgba(#{map.get($palette, "base")}, 0.3),
+    0 0 8px rgba(#{$accent-color}, 0.3);
+}
+
+trough {
+  background-color: #{map.get($palette, "surface0")};
+}
+
+/* notifications */
+
+.notification-background {
+  box-shadow:
+    0 0 8px 0 rgba(#{map.get($palette, "base")}, 0.3),
+    inset 0 0 0 1px rgba(#{map.get($palette, "surface1")}, 0.3);
+  background: #{map.get($palette, "mantle")};
+  color: #{map.get($palette, "text")};
+
+  .notification.critical {
+    box-shadow: inset 0 0 7px 0 rgba(#{map.get($palette, "red")}, 0.3);
+  }
+
+  .notification-content {
+    .summary {
+      color: #{map.get($palette, "text")};
+    }
+
+    .time {
+      color: #{map.get($palette, "subtext0")};
+    }
+
+    .body {
+      color: #{map.get($palette, "subtext1")};
+    }
+  }
+
+  .close-button {
+    color: #{map.get($palette, "base")};
+    background-color: #{map.get($palette, "red")};
+
+    &:hover {
+      background-color: #{map.get($palette, "maroon")};
+    }
+
+    &:active {
+      background-color: #{map.get($palette, "pink")};
+    }
+  }
+
+  .notification-action {
+    color: #{map.get($palette, "text")};
+    background-color: #{map.get($palette, "surface0")};
+    box-shadow: inset 0 0 0 1px rgba(#{map.get($palette, "surface1")}, 0.3);
+
+    &:hover {
+      background-color: #{map.get($palette, "surface1")};
+    }
+
+    &:active {
+      background-color: #{map.get($palette, "surface2")};
+    }
+
+    .notification.critical progress {
+      background-color: #{map.get($palette, "red")};
+    }
+
+    .notification.low progress {
+      background-color: #{map.get($palette, "teal")};
+    }
+
+    .notification.normal progress {
+      background-color: #{map.get($palette, "peach")};
+    }
+  }
+}
+
+.control-center {
+  box-shadow:
+    0 0 8px 0 rgba(#{map.get($palette, "base")}, 0.3),
+    inset 0 0 0 1px rgba(#{map.get($palette, "surface0")}, 0.3);
+  background-color: #{map.get($palette, "base")};
+  color: #{map.get($palette, "text")};
+
+  .notification-background {
+    box-shadow: inset 0 0 0 1px rgba(#{map.get($palette, "surface1")}, 0.3);
+
+    .notification.low {
+      opacity: 0.8;
+    }
+  }
+
+  .widget-title {
+    & > label {
+      color: #{map.get($palette, "text")};
+    }
+
+    button {
+      color: #{map.get($palette, "text")};
+      background-color: #{map.get($palette, "surface0")};
+      box-shadow: inset 0 0 0 1px rgba(#{map.get($palette, "surface1")}, 0.3);
+
+      &:hover {
+        background-color: #{map.get($palette, "surface1")};
+      }
+
+      &:active {
+        background-color: #{map.get($palette, "surface2")};
+      }
+    }
+  }
+
+  .notification-group {
+    &:focus .notification-background {
+      background-color: #{map.get($palette, "surface0")};
+    }
+  }
+}
+
+scrollbar {
+  slider {
+    opacity: 0.8;
+  }
+}
+
+/* dnd */
+
+.widget-dnd {
+  switch {
+    background: #{map.get($palette, "surface0")};
+    box-shadow: none;
+
+    &:checked {
+      background: #{$accent-color};
+    }
+
+    slider {
+      background: #{map.get($palette, "surface1")};
+    }
+  }
+}
+
+/* mpris */
+
+.widget-mpris-player {
+  background: #{map.get($palette, "surface0")};
+  color: #{map.get($palette, "text")};
+}
+
+.mpris-overlay {
+  background-color: #{map.get($palette, "surface0")};
+  opacity: 0.9;
+}
+
+.widget-mpris-title {
+  color: #{map.get($palette, "text")};
+}
+
+.widget-mpris-subtitle {
+  color: #{map.get($palette, "subtext1")};
+}
+
+.widget-mpris button {
+  color: #{map.get($palette, "text")};
+
+  &:hover {
+    background-color: #{map.get($palette, "surface0")};
+  }
+
+  &:active {
+    background-color: #{map.get($palette, "surface1")};
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.widget-menubar {
+  & > .menu-button-bar {
+    & > :last-child {
+      color: #{map.get($palette, "red")};
+    }
+  }
+}
+
+.power-buttons button:hover,
+.powermode-buttons button:hover,
+.screenshot-buttons button:hover {
+  background: #{map.get($palette, "surface0")};
+}
+
+.control-center .widget-label > label {
+  color: #{map.get($palette, "text")};
+}
+
+.widget-volume {
+  padding: 1rem 0;
+  label {
+    color: #{map.get($palette, "sapphire")};
+  }
+
+  trough highlight {
+    background: #{map.get($palette, "sapphire")};
+  }
+}
+
+.widget-backlight {
+  trough highlight {
+    background: #{map.get($palette, "yellow")};
+  }
+
+  label {
+    color: #{map.get($palette, "yellow")};
+  }
+}

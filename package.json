@@ -8,7 +8,9 @@
     "url": "git+https://github.com/catppuccin/swaync.git"
   },
   "scripts": {
-    "build": "sass -I node_modules --no-charset --no-source-map src:dist"
+    "build": "bash build.sh",
+    "build:watch": "bash build.sh --watch",
+    "clean": "bash build.sh --clean"
   },
   "author": "Catppuccin Org <releases@catppuccin.com>",
   "license": "MIT",
