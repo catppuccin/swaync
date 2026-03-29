@@ -36,13 +36,26 @@
 
 ## Usage
 
-1. Download your preferred flavor from the [latest release](https://github.com/catppuccin/swaync/releases/latest).
-2. Rename the downloaded theme to `style.css` and put it into `~/.config/swaync/`.
-3. If you're using a custom font, you will need to change the line `font-family: 'Ubuntu Nerd Font'` to your font of choice.
+1. Download your preferred flavor and accent from the
+   [latest release](https://github.com/catppuccin/swaync/releases/latest).
+2. Put the downloaded file into `~/.config/swaync/`.
+3. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
+   prioritise this style!
+4. In `~/.config/swaync/style.css`, add the line
+   `@import url(catppuccin-<flavor>-<accent>.css);` at the top of the file.
+5. Any personal changes to SwayNC's styling should now reside in `style.css`.
+
+## FAQ
+
+- Q: I have no idea what I should customise! What do I do now?\
+  A: Please use the provided [`style.css`](style.css) file if you need a default
+  CSS template to work from. It includes some of the default configuration
+  options that was provided in an older version of this theme.
 
 ## 💝 Thanks to
 
 - [Isabel Roses](https://github.com/isabelroses)
+- [Toria](https://github.com/ninetailedtori)
 
 &nbsp;
 

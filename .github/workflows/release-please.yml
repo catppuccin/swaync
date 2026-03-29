@@ -32,7 +32,8 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
       - run: npm ci
+      - run: apt-get update && apt-get install -y parallel fswatch
       - run: npm run build
-      - run: gh release upload ${{ needs.release-please.outputs.tag_name }} dist/*.css
+      - run: find dist -type f -name "*.css" -exec gh release upload ${{ needs.release-please.outputs.tag_name }} {} +
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
