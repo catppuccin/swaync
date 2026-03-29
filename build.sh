@@ -22,23 +22,26 @@ compile_variant() {
 
   # Create temp SCSS with variables
   cat > "$tmp_file" << EOF
+@use "$NODE_MODULES/@catppuccin/palette/scss/catppuccin";
+@use "sass:map";
+
 \$flavor: "$flavor";
 \$accent: "$accent";
+\$palette: map.get(catppuccin.\$palette, "$flavor");
+
 @import "$SRC_DIR/theme.scss";
 EOF
 
   npx sass \
-    -I "$NODE_MODULES" \
-    -I "$SRC_DIR" \
     --no-charset \
     --no-source-map \
+    --silence-deprecation=import \
     "$tmp_file" \
     "$out_file"
 }
 
 compile_style() {
   npx sass \
-    -I "$NODE_MODULES" \
     -I "$SRC_DIR" \
     --no-charset \
     --no-source-map \
@@ -56,7 +59,7 @@ compile_all() {
         echo "$flavor $accent"
       done
     done
-  } | parallel --jobs 0 'compile_variant {1} {2}'
+  } | parallel --jobs 0 --colsep ' ' 'compile_variant {1} {2}' 2>&1 | grep -v "^\^"
 
   compile_style
 
