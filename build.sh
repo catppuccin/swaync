@@ -42,7 +42,6 @@ EOF
 
 compile_style() {
   npx sass \
-    -I "$SRC_DIR" \
     --no-charset \
     --no-source-map \
     "$SRC_DIR/style.scss" \
