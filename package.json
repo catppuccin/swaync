@@ -9,8 +9,7 @@
   },
   "scripts": {
     "build": "bash build.sh",
-    "build:watch": "bash build.sh --watch",
-    "clean": "bash build.sh --clean"
+    "build:watch": "bash build.sh --watch"
   },
   "author": "Catppuccin Org <releases@catppuccin.com>",
   "license": "MIT",

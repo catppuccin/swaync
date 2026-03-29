@@ -61,7 +61,7 @@ compile_all() {
   } | parallel --jobs 0 --colsep ' ' 'compile_variant {1} {2}' 2>&1 | grep -v "^\^"
 
   compile_style
-
+  rm -rf "$TMP_DIR"
   echo "success"
 }
 
@@ -76,9 +76,6 @@ main() {
     --watch|-w)
       compile_all
       watch_mode
-      ;;
-    --clean|-c)
-      rm -rf "$DIST_DIR" "dist/style.css" "$TMP_DIR"
       ;;
     *)
       compile_all
