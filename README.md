@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Download your preferred flavor from the
+1. Download your preferred flavor and accent from the
    [latest release](https://github.com/catppuccin/swaync/releases/latest).
 2. Put the downloaded file into `~/.config/swaync/`.
 3. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
