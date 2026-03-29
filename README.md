@@ -36,8 +36,8 @@
 
 ## Usage
 
-1. Download the CSS file with your preferred flavour and accent from the
-   [`themes/`](themes/) folder.
+1. Download your preferred flavor from the
+   [latest release](https://github.com/catppuccin/swaync/releases/latest).
 2. Put the downloaded file into `~/.config/swaync/`.
 3. Add `"cssPriority": "user",` to your `swaync/config.json` config file, to
    prioritise this style!
